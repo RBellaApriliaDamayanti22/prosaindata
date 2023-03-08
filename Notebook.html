@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRAWLING TWITTER &#8212; R.Bellla Aprilia Damayanti</title>
+    <title>TUGAS 1 (CRAWLING TWITTER) &#8212; R.Bellla Aprilia Damayanti</title>
   
   
   
@@ -155,7 +155,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">CRAWLING TWITTER</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TUGAS 1 (CRAWLING TWITTER)</a></li>
 
 
 
@@ -342,7 +342,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>CRAWLING TWITTER</h1>
+    <h1>TUGAS 1 (CRAWLING TWITTER)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -352,24 +352,24 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">CRAWLING TWITTER</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TUGAS 1 (CRAWLING TWITTER)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-snscrape">1. Install snscrape</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-data-website-https-pta-trunojoyo-ac-id">Crawling data Website https://pta.trunojoyo.ac.id/</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2-crawling-data-website-https-pta-trunojoyo-ac-id">TUGAS 2 (Crawling data Website https://pta.trunojoyo.ac.id/ )</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-modul-beautifulsoup-dan-request-and-import-library">1. Install modul Beautifulsoup dan request and Import library</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peroses-crawling-menggunakan-bs4-dan-request">Peroses crawling menggunakan bs4 dan request</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-to-csv">Export To CSV</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-data-website-berita-cnn">Crawling data Website Berita CNN</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-3-crawling-data-website-berita-cnn">TUGAS 3 (Crawling data Website Berita CNN)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-modul-beautifulsoup-dan-requests">1. Install modul Beautifulsoup dan requests</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">2. Import library</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3. Peroses crawling menggunakan bs4 dan request</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.Export To CSV</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4">TUGAS 4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a></li>
 </ul>
 
             </nav>
@@ -382,8 +382,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="crawling-twitter">
-<h1>CRAWLING TWITTER<a class="headerlink" href="#crawling-twitter" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tugas-1-crawling-twitter">
+<h1>TUGAS 1 (CRAWLING TWITTER)<a class="headerlink" href="#tugas-1-crawling-twitter" title="Permalink to this heading">#</a></h1>
 <div class="section" id="install-snscrape">
 <h2>1. Install snscrape<a class="headerlink" href="#install-snscrape" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -395,10 +395,10 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: snscrape in /usr/local/lib/python3.9/dist-packages (0.6.0.20230303)
-Requirement already satisfied: requests[socks] in /usr/local/lib/python3.9/dist-packages (from snscrape) (2.25.1)
-Requirement already satisfied: lxml in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.9.2)
-Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.6.3)
 Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.9.0)
+Requirement already satisfied: lxml in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.9.2)
+Requirement already satisfied: requests[socks] in /usr/local/lib/python3.9/dist-packages (from snscrape) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.6.3)
 Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2.10)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.26.14)
@@ -439,8 +439,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "4c0c54c0dc274492a26435c11da2b1e0"}</script><div class="output text_html">
-  <div id="df-16c1defe-3eb0-4286-9581-bfc884bf3817">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "e5fa43d189f443a1b74407cdbb6226aa"}</script><div class="output text_html">
+  <div id="df-2fb484ec-08a7-426e-8d6b-894e0ac06f50">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -468,33 +468,33 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
   <tbody>
     <tr>
       <th>0</th>
+      <td>edwinsaragih</td>
+      <td>@Idenyasia @sandiuno Mbak.. itu emang dipake p...</td>
+      <td>Bali, Indonesia</td>
+    </tr>
+    <tr>
+      <th>1</th>
       <td>ahli_tilang</td>
       <td>Om sandiuno mhn bantu RT - Jadi tinggi dan lan...</td>
       <td>JAKARTA</td>
     </tr>
     <tr>
-      <th>1</th>
+      <th>2</th>
       <td>Heri73032637</td>
       <td>Bang @sandiuno , bung @bahlillahadalia hemat s...</td>
       <td></td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>3</th>
       <td>daraja_amron</td>
       <td>@sandiuno Sarapanya soto lamongan pak..nyus hhe</td>
       <td>bismillahirrahmaanirrahiim</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>4</th>
       <td>NamungAbdiGusti</td>
       <td>@dsneyfans Menurut pak menteri @sandiuno ini g...</td>
       <td>unidentified.</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>semarakredaksi</td>
-      <td>@sandiuno salam sehat pak. Sukses terus</td>
-      <td></td>
     </tr>
     <tr>
       <th>...</th>
@@ -505,38 +505,38 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
     <tr>
       <th>497</th>
       <td>PorosHalangID</td>
-      <td>@larradwaulia @sandiuno No comment kalo itu ka...</td>
-      <td>Indonesia</td>
-    </tr>
-    <tr>
-      <th>498</th>
-      <td>Liverpo65621631</td>
-      <td>@PorosHalangID @sandiuno Aku suka aku suka aku...</td>
-      <td>DKI Jakarta, Indonesia</td>
-    </tr>
-    <tr>
-      <th>499</th>
-      <td>PorosHalangID</td>
       <td>@arieparikesit @sandiuno Huvt</td>
       <td>Indonesia</td>
     </tr>
     <tr>
-      <th>500</th>
+      <th>498</th>
       <td>PorosHalangID</td>
       <td>@oshhha_ @sandiuno Miris malah liatnya. 😂</td>
       <td>Indonesia</td>
     </tr>
     <tr>
-      <th>501</th>
+      <th>499</th>
       <td>alrianraka_</td>
       <td>@PorosHalangID @sandiuno Agak maksa sih ini wk...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>500</th>
+      <td>Heymasjar</td>
+      <td>@AimR52 @Catatan_ali7 @karmapolsek @PorosHalan...</td>
+      <td>Gresik</td>
+    </tr>
+    <tr>
+      <th>501</th>
+      <td>papafranku6666</td>
+      <td>@pawpaw2112 @AhmadFaisal_12_ @TyanBestyana @Po...</td>
       <td></td>
     </tr>
   </tbody>
 </table>
 <p>502 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-16c1defe-3eb0-4286-9581-bfc884bf3817')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2fb484ec-08a7-426e-8d6b-894e0ac06f50')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -587,12 +587,12 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 
       <script>
         const buttonEl =
-          document.querySelector('#df-16c1defe-3eb0-4286-9581-bfc884bf3817 button.colab-df-convert');
+          document.querySelector('#df-2fb484ec-08a7-426e-8d6b-894e0ac06f50 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-16c1defe-3eb0-4286-9581-bfc884bf3817');
+          const element = document.querySelector('#df-2fb484ec-08a7-426e-8d6b-894e0ac06f50');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -622,8 +622,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="crawling-data-website-https-pta-trunojoyo-ac-id">
-<h1>Crawling data Website <a class="reference external" href="https://pta.trunojoyo.ac.id/">https://pta.trunojoyo.ac.id/</a><a class="headerlink" href="#crawling-data-website-https-pta-trunojoyo-ac-id" title="Permalink to this heading">#</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="tugas-2-crawling-data-website-https-pta-trunojoyo-ac-id">
+<h1>TUGAS 2 (Crawling data Website <a class="reference external" href="https://pta.trunojoyo.ac.id/">https://pta.trunojoyo.ac.id/</a> )<a class="headerlink" href="#tugas-2-crawling-data-website-https-pta-trunojoyo-ac-id" title="Permalink to this heading">#</a></h1>
 <div class="section" id="install-modul-beautifulsoup-dan-request-and-import-library">
 <h2>1. Install modul Beautifulsoup dan request and Import library<a class="headerlink" href="#install-modul-beautifulsoup-dan-request-and-import-library" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -1012,8 +1012,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="crawling-data-website-berita-cnn">
-<h1>Crawling data Website Berita CNN<a class="headerlink" href="#crawling-data-website-berita-cnn" title="Permalink to this heading">#</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="tugas-3-crawling-data-website-berita-cnn">
+<h1>TUGAS 3 (Crawling data Website Berita CNN)<a class="headerlink" href="#tugas-3-crawling-data-website-berita-cnn" title="Permalink to this heading">#</a></h1>
 <hr class="docutils" />
 <div class="section" id="install-modul-beautifulsoup-dan-requests">
 <h2>1. Install modul Beautifulsoup dan requests<a class="headerlink" href="#install-modul-beautifulsoup-dan-requests" title="Permalink to this heading">#</a></h2>
@@ -1478,9 +1478,9 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="tugas-4">
-<h1>TUGAS 4<a class="headerlink" href="#tugas-4" title="Permalink to this heading">#</a></h1>
-<p><a class="reference external" href="http://localhost:8888/?token=4e4a9bd9c28413495c47462c490c80ee5431fee07e112262">http://localhost:8888/?token=4e4a9bd9c28413495c47462c490c80ee5431fee07e112262</a></p>
+<div class="tex2jax_ignore mathjax_ignore section" id="tugas-4-pipelines">
+<h1>TUGAS 4 (Pipelines)<a class="headerlink" href="#tugas-4-pipelines" title="Permalink to this heading">#</a></h1>
+<p>Pertama tama saya memisahkan kolom Petal Length, Petal Width, Sepal Length, dan Sepal Width + class dan ditambah masing-masing kolom id di csv. kemudian saya mengkonversi csv to sql menjadi script sql. setelah masing-masing kolom telah di ubah ke script sql, selanjutnya saya memasukkan data tersebut ke masing” aplikasi database yaitu mysql, sql server, dan postgres sql local + elephant. Pertama, kolom sepal length saya masukkan ke database postgressql local, kemudian kolom sepal width saya masukkkan ke database postgressql elephantsql, kolom petal length dimasukkan ke database mysql local, dan terakhir kolom petalwidth +class dimasukkan ke database sql server, semua dimasukkkan sesuai dengan tahapan masing” database tersebut dengan menggunakan script sql yang sudah dikonversi dari csv. kemudian setelah berhasil memasukkan ke semua database lanjut menjadikan 1 kolom-kolom tersebut. disini saya mencoba menggunakan orchest namun tidak bisa untuk yang local (hanya bisa postgrest elephantsql saja) sehingga saya mencoba menggabungkan data-data dari tiap database tersebut dengan menggunakan google colab.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyodbc</span> 
@@ -1614,18 +1614,16 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="c1"># Connection parameters, yours will be different</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;host&quot;</span>      <span class="p">:</span> <span class="s2">&quot;tiny.db.elephantsql.com&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;database&quot;</span>  <span class="p">:</span> <span class="s2">&quot;rhwoswwx&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;user&quot;</span>      <span class="p">:</span> <span class="s2">&quot;rhwoswwx&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;password&quot;</span>  <span class="p">:</span> <span class="s2">&quot;2LqEviJ16iU8KE6PWVyjG0rdi_ZBgbHO&quot;</span>
-<span class="p">}</span>
+
+<span class="c1"># Buat koneksi ke PostgreSQL.</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="o">=</span><span class="s2">&quot;rhwoswwx&quot;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s2">&quot;rhwoswwx&quot;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s2">&quot;2LqEviJ16iU8KE6PWVyjG0rdi_ZBgbHO&quot;</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;tiny.db.elephantsql.com&quot;</span><span class="p">)</span>
+
+
 <span class="c1"># Buat cursor untuk menjalankan query SQL.</span>
 <span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 
 <span class="c1"># Jalankan query SQL.</span>
-<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT ROW_NUMBER() OVER () as id, sepalwidth FROM iris;&quot;</span><span class="p">)</span>
+<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT ROW_NUMBER() OVER () as id, sepalwidth FROM iris_sepalwidth;&quot;</span><span class="p">)</span>
 
 <span class="c1"># Ambil hasil query.</span>
 <span class="n">hasil_query</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
@@ -1641,16 +1639,20 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_5500</span>\<span class="mf">1911977073.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="p">}</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="c1"># Buat cursor untuk menjalankan query SQL.</span>
-<span class="ne">---&gt; </span><span class="mi">11</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> 
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1"># Jalankan query SQL.</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      id sepalwidth
+0      1        3.5
+1      2          3
+2      3        3.2
+3      4        3.1
+4      5        3.6
+..   ...        ...
+145  146          3
+146  147        2.5
+147  148          3
+148  149        3.4
+149  150          3
 
-<span class="ne">AttributeError</span>: &#39;dict&#39; object has no attribute &#39;cursor&#39;
+[150 rows x 2 columns]
 </pre></div>
 </div>
 </div>
@@ -2447,24 +2449,24 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">CRAWLING TWITTER</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TUGAS 1 (CRAWLING TWITTER)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-snscrape">1. Install snscrape</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-data-website-https-pta-trunojoyo-ac-id">Crawling data Website https://pta.trunojoyo.ac.id/</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2-crawling-data-website-https-pta-trunojoyo-ac-id">TUGAS 2 (Crawling data Website https://pta.trunojoyo.ac.id/ )</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-modul-beautifulsoup-dan-request-and-import-library">1. Install modul Beautifulsoup dan request and Import library</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peroses-crawling-menggunakan-bs4-dan-request">Peroses crawling menggunakan bs4 dan request</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-to-csv">Export To CSV</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-data-website-berita-cnn">Crawling data Website Berita CNN</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-3-crawling-data-website-berita-cnn">TUGAS 3 (Crawling data Website Berita CNN)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-modul-beautifulsoup-dan-requests">1. Install modul Beautifulsoup dan requests</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">2. Import library</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3. Peroses crawling menggunakan bs4 dan request</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.Export To CSV</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4">TUGAS 4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a></li>
 </ul>
 
   </nav></div>
