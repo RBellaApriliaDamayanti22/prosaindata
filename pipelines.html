@@ -1,0 +1,1303 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; R.Bellla Aprilia Damayanti</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pipelines';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/bella.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/bella.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas1.html">CRAWLING TWITTER</a></li>
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpipelines.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/pipelines.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><a class="reference external" href="http://localhost:8888/?token=4e4a9bd9c28413495c47462c490c80ee5431fee07e112262">http://localhost:8888/?token=4e4a9bd9c28413495c47462c490c80ee5431fee07e112262</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyodbc</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">cnxn_str</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Driver={odbc driver 17 for sql server};&quot;</span>
+            <span class="s2">&quot;Server=DESKTOP-GVA3L0V\SQLEXPRESS;&quot;</span>
+            <span class="s2">&quot;Database=prosain200411100082;&quot;</span>
+            <span class="s2">&quot;Trusted_Connection=yes;&quot;</span><span class="p">)</span>
+<span class="n">cnxn</span> <span class="o">=</span> <span class="n">pyodbc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">cnxn_str</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">cnxn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>	
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM iris_arff&quot;</span><span class="p">)</span> 
+<span class="n">row</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span> 
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">data</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">]])</span>
+<span class="n">df_sqlServer</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;petalwidth&#39;</span><span class="p">,</span><span class="s1">&#39;class&#39;</span><span class="p">])</span>
+<span class="n">df_sqlServer</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">ModuleNotFoundError</span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">2663</span><span class="n">ed3f6e2e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pyodbc</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">cnxn_str</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Driver={odbc driver 17 for sql server};&quot;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>             <span class="s2">&quot;Server=DESKTOP-GVA3L0V\SQLEXPRESS;&quot;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>             <span class="s2">&quot;Database=prosain200411100082;&quot;</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pyodbc&#39;
+
+<span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NOTE</span>: If your import is failing due to a missing package, you can
+<span class="n">manually</span> <span class="n">install</span> <span class="n">dependencies</span> <span class="n">using</span> <span class="n">either</span> <span class="o">!</span>pip<span class="w"> </span>or<span class="w"> </span>!apt.
+
+<span class="n">To</span> <span class="n">view</span> <span class="n">examples</span> <span class="n">of</span> <span class="n">installing</span> <span class="n">some</span> <span class="n">common</span> <span class="n">dependencies</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span>
+<span class="s2">&quot;Open Examples&quot;</span> <span class="n">button</span> <span class="n">below</span><span class="o">.</span>
+<span class="gt">---------------------------------------------------------------------------</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>psycopg2
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: psycopg2 in c:\users\user\anaconda3\lib\site-packages (2.9.5)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="c1"># Connection parameters, yours will be different</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;host&quot;</span>      <span class="p">:</span> <span class="s2">&quot;tiny.db.elephantsql.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;database&quot;</span>  <span class="p">:</span> <span class="s2">&quot;rhwoswwx&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;user&quot;</span>      <span class="p">:</span> <span class="s2">&quot;rhwoswwx&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;password&quot;</span>  <span class="p">:</span> <span class="s2">&quot;2LqEviJ16iU8KE6PWVyjG0rdi_ZBgbHO&quot;</span>
+<span class="p">}</span>
+<span class="c1"># Buat cursor untuk menjalankan query SQL.</span>
+<span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># Jalankan query SQL.</span>
+<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT ROW_NUMBER() OVER () as id, sepalwidth FROM iris;&quot;</span><span class="p">)</span>
+
+<span class="c1"># Ambil hasil query.</span>
+<span class="n">hasil_query</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="n">df_postEle</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">hasil_query</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;sepalwidth&quot;</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df_postEle</span><span class="p">)</span>
+
+<span class="c1"># Tutup cursor dan koneksi.</span>
+<span class="n">cur</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_5500</span>\<span class="mf">1911977073.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="p">}</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="c1"># Buat cursor untuk menjalankan query SQL.</span>
+<span class="ne">---&gt; </span><span class="mi">11</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> 
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1"># Jalankan query SQL.</span>
+
+<span class="ne">AttributeError</span>: &#39;dict&#39; object has no attribute &#39;cursor&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Buat koneksi ke PostgreSQL.</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="o">=</span><span class="s2">&quot;prosaindata0082&quot;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s2">&quot;postgres&quot;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s2">&quot;12345&quot;</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="s2">&quot;5432&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Buat cursor untuk menjalankan query SQL.</span>
+<span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># Jalankan query SQL.</span>
+<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT ROW_NUMBER() OVER () as id, sepallength FROM iris_arff;&quot;</span><span class="p">)</span>
+
+<span class="c1"># Ambil hasil query.</span>
+<span class="n">hasil_query</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="n">df_postLocal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">hasil_query</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;sepallength&quot;</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df_postLocal</span><span class="p">)</span>
+
+<span class="c1"># Tutup cursor dan koneksi.</span>
+<span class="n">cur</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      id sepallength
+0      1         5.1
+1      2         4.9
+2      3         4.7
+3      4         4.6
+4      5           5
+..   ...         ...
+145  146         6.7
+146  147         6.3
+147  148         6.5
+148  149         6.2
+149  150         5.9
+
+[150 rows x 2 columns]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>mysqlclient
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>mysql-connector-python
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>pymysql
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: mysqlclient in c:\users\user\anaconda3\lib\site-packages (2.1.1)
+Requirement already satisfied: mysql-connector-python in c:\users\user\anaconda3\lib\site-packages (8.0.32)
+Requirement already satisfied: protobuf&lt;=3.20.3,&gt;=3.11.0 in c:\users\user\anaconda3\lib\site-packages (from mysql-connector-python) (3.20.3)
+Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packages (1.0.2)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mysql.connector</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">mydb</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+  <span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+  <span class="n">user</span><span class="o">=</span><span class="s2">&quot;root&quot;</span><span class="p">,</span>
+  <span class="n">password</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="n">database</span><span class="o">=</span><span class="s2">&quot;prosain200411100082&quot;</span>
+<span class="p">)</span>
+
+<span class="n">mycursor</span> <span class="o">=</span> <span class="n">mydb</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">mycursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM iris_mysql&quot;</span><span class="p">)</span>
+
+<span class="n">myresult</span> <span class="o">=</span> <span class="n">mycursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+<span class="n">mycursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">df_mysql</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">myresult</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;petallength&#39;</span><span class="p">])</span>
+<span class="c1"># df_mysql.drop(df_mysql.columns[[0]],axis=1,inplace=True)</span>
+<span class="n">df_mysql</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>petallength</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ID ;Petallength</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1;1</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2;1</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3;1</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4;1</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>146;5</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>147;5</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>148;5</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>149;5</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>150;5</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>151 rows × 2 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># merge df</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_postLocal</span><span class="p">,</span> <span class="n">df_postEle</span><span class="p">,</span><span class="n">df_mysql</span><span class="p">,</span> <span class="n">df_sqlServer</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># result = pd.merge(df_postLocal,df_sqlServer, how=&quot;inner&quot;, on=[&quot;id&quot;, &quot;id&quot;])</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>sepallength</th>
+      <th>ID</th>
+      <th>sepalwidth</th>
+      <th>id</th>
+      <th>petallength</th>
+      <th>id</th>
+      <th>petalwidth</th>
+      <th>class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.0</td>
+      <td>5.1</td>
+      <td>1.0</td>
+      <td>3,5</td>
+      <td>ID ;Petallength</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2.0</td>
+      <td>4.9</td>
+      <td>2.0</td>
+      <td>3</td>
+      <td>1;1</td>
+      <td>4.0</td>
+      <td>2.0</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3.0</td>
+      <td>4.7</td>
+      <td>3.0</td>
+      <td>3,2</td>
+      <td>2;1</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4.0</td>
+      <td>4.6</td>
+      <td>4.0</td>
+      <td>3,1</td>
+      <td>3;1</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5.0</td>
+      <td>5</td>
+      <td>5.0</td>
+      <td>3,6</td>
+      <td>4;1</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>147.0</td>
+      <td>6.3</td>
+      <td>147.0</td>
+      <td>2,5</td>
+      <td>146;5</td>
+      <td>2.0</td>
+      <td>147.0</td>
+      <td>1.9</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>148.0</td>
+      <td>6.5</td>
+      <td>148.0</td>
+      <td>3</td>
+      <td>147;5</td>
+      <td>NaN</td>
+      <td>148.0</td>
+      <td>2</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>149.0</td>
+      <td>6.2</td>
+      <td>149.0</td>
+      <td>3,4</td>
+      <td>148;5</td>
+      <td>2.0</td>
+      <td>149.0</td>
+      <td>2.3</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>150.0</td>
+      <td>5.9</td>
+      <td>150.0</td>
+      <td>3</td>
+      <td>149;5</td>
+      <td>4.0</td>
+      <td>150.0</td>
+      <td>1.8</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>150;5</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>151 rows × 9 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepallength</th>
+      <th>sepalwidth</th>
+      <th>petallength</th>
+      <th>petalwidth</th>
+      <th>class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5.1</td>
+      <td>3,5</td>
+      <td>NaN</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4.9</td>
+      <td>3</td>
+      <td>4.0</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4.7</td>
+      <td>3,2</td>
+      <td>4.0</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4.6</td>
+      <td>3,1</td>
+      <td>3.0</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>3,6</td>
+      <td>5.0</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>6.3</td>
+      <td>2,5</td>
+      <td>2.0</td>
+      <td>1.9</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>6.5</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>6.2</td>
+      <td>3,4</td>
+      <td>2.0</td>
+      <td>2.3</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>5.9</td>
+      <td>3</td>
+      <td>4.0</td>
+      <td>1.8</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>151 rows × 5 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">values</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">values</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[&#39;5.1&#39; &#39;3,5&#39; nan &#39;0.2&#39;]
+ [&#39;4.9&#39; &#39;3&#39; 4.0 &#39;0.2&#39;]
+ [&#39;4.7&#39; &#39;3,2&#39; 4.0 &#39;0.2&#39;]
+ [&#39;4.6&#39; &#39;3,1&#39; 3.0 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3,6&#39; 5.0 &#39;0.2&#39;]
+ [&#39;5.4&#39; &#39;3,9&#39; 4.0 &#39;0.4&#39;]
+ [&#39;4.6&#39; &#39;3,4&#39; 7.0 &#39;0.3&#39;]
+ [&#39;5&#39; &#39;3,4&#39; 4.0 &#39;0.2&#39;]
+ [&#39;4.4&#39; &#39;2,9&#39; 5.0 &#39;0.2&#39;]
+ [&#39;4.9&#39; &#39;3,1&#39; 4.0 &#39;0.1&#39;]
+ [&#39;5.4&#39; &#39;3,7&#39; 5.0 &#39;0.2&#39;]
+ [&#39;4.8&#39; &#39;3,4&#39; 5.0 &#39;0.2&#39;]
+ [&#39;4.8&#39; &#39;3&#39; 6.0 &#39;0.1&#39;]
+ [&#39;4.3&#39; &#39;3&#39; 4.0 &#39;0.1&#39;]
+ [&#39;5.8&#39; &#39;4&#39; 1.0 &#39;0.2&#39;]
+ [&#39;5.7&#39; &#39;4,4&#39; 2.0 &#39;0.4&#39;]
+ [&#39;5.4&#39; &#39;3,9&#39; 5.0 &#39;0.4&#39;]
+ [&#39;5.1&#39; &#39;3,5&#39; 3.0 &#39;0.3&#39;]
+ [&#39;5.7&#39; &#39;3,8&#39; 4.0 &#39;0.3&#39;]
+ [&#39;5.1&#39; &#39;3,8&#39; 7.0 &#39;0.3&#39;]
+ [&#39;5.4&#39; &#39;3,4&#39; 5.0 &#39;0.2&#39;]
+ [&#39;5.1&#39; &#39;3,7&#39; 7.0 &#39;0.4&#39;]
+ [&#39;4.6&#39; &#39;3,6&#39; 5.0 &#39;0.2&#39;]
+ [&#39;5.1&#39; &#39;3,3&#39; nan &#39;0.5&#39;]
+ [&#39;4.8&#39; &#39;3,4&#39; 7.0 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3&#39; 9.0 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3,4&#39; 6.0 &#39;0.4&#39;]
+ [&#39;5.2&#39; &#39;3,5&#39; 6.0 &#39;0.2&#39;]
+ [&#39;5.2&#39; &#39;3,4&#39; 5.0 &#39;0.2&#39;]
+ [&#39;4.7&#39; &#39;3,2&#39; 4.0 &#39;0.2&#39;]
+ [&#39;4.8&#39; &#39;3,1&#39; 6.0 &#39;0.2&#39;]
+ [&#39;5.4&#39; &#39;3,4&#39; 6.0 &#39;0.4&#39;]
+ [&#39;5.2&#39; &#39;4,1&#39; 5.0 &#39;0.1&#39;]
+ [&#39;5.5&#39; &#39;4,2&#39; 5.0 &#39;0.2&#39;]
+ [&#39;4.9&#39; &#39;3,1&#39; 4.0 &#39;0.1&#39;]
+ [&#39;5&#39; &#39;3,2&#39; 5.0 &#39;0.2&#39;]
+ [&#39;5.5&#39; &#39;3,5&#39; 2.0 &#39;0.2&#39;]
+ [&#39;4.9&#39; &#39;3,1&#39; 3.0 &#39;0.1&#39;]
+ [&#39;4.4&#39; &#39;3&#39; 5.0 &#39;0.2&#39;]
+ [&#39;5.1&#39; &#39;3,4&#39; 3.0 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3,5&#39; 5.0 &#39;0.3&#39;]
+ [&#39;4.5&#39; &#39;2,3&#39; 3.0 &#39;0.3&#39;]
+ [&#39;4.4&#39; &#39;3,2&#39; 3.0 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3,5&#39; 3.0 &#39;0.6&#39;]
+ [&#39;5.1&#39; &#39;3,8&#39; 6.0 &#39;0.4&#39;]
+ [&#39;4.8&#39; &#39;3&#39; 9.0 &#39;0.3&#39;]
+ [&#39;5.1&#39; &#39;3,8&#39; 4.0 &#39;0.2&#39;]
+ [&#39;4.6&#39; &#39;3,2&#39; 6.0 &#39;0.2&#39;]
+ [&#39;5.3&#39; &#39;3,7&#39; 4.0 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3,3&#39; 5.0 &#39;0.2&#39;]
+ [&#39;7&#39; &#39;3,2&#39; 4.0 &#39;1.4&#39;]
+ [&#39;6.4&#39; &#39;3,2&#39; 7.0 &#39;1.5&#39;]
+ [&#39;6.9&#39; &#39;3,1&#39; 5.0 &#39;1.5&#39;]
+ [&#39;5.5&#39; &#39;2,3&#39; 9.0 &#39;1.3&#39;]
+ [&#39;6.5&#39; &#39;2,8&#39; nan &#39;1.5&#39;]
+ [&#39;5.7&#39; &#39;2,8&#39; 6.0 &#39;1.3&#39;]
+ [&#39;6.3&#39; &#39;3,3&#39; 5.0 &#39;1.6&#39;]
+ [&#39;4.9&#39; &#39;2,4&#39; 7.0 &#39;1&#39;]
+ [&#39;6.6&#39; &#39;2,9&#39; 3.0 &#39;1.3&#39;]
+ [&#39;5.2&#39; &#39;2,7&#39; 6.0 &#39;1.4&#39;]
+ [&#39;5&#39; &#39;2&#39; 9.0 &#39;1&#39;]
+ [&#39;5.9&#39; &#39;3&#39; 5.0 &#39;1.5&#39;]
+ [&#39;6&#39; &#39;2,2&#39; 2.0 &#39;1&#39;]
+ [&#39;6.1&#39; &#39;2,9&#39; nan &#39;1.4&#39;]
+ [&#39;5.6&#39; &#39;2,9&#39; 7.0 &#39;1.3&#39;]
+ [&#39;6.7&#39; &#39;3,1&#39; 6.0 &#39;1.4&#39;]
+ [&#39;5.6&#39; &#39;3&#39; 4.0 &#39;1.5&#39;]
+ [&#39;5.8&#39; &#39;2,7&#39; 5.0 &#39;1&#39;]
+ [&#39;6.2&#39; &#39;2,2&#39; 1.0 &#39;1.5&#39;]
+ [&#39;5.6&#39; &#39;2,5&#39; 5.0 &#39;1.1&#39;]
+ [&#39;5.9&#39; &#39;3,2&#39; 9.0 &#39;1.8&#39;]
+ [&#39;6.1&#39; &#39;2,8&#39; 8.0 &#39;1.3&#39;]
+ [&#39;6.3&#39; &#39;2,5&#39; nan &#39;1.5&#39;]
+ [&#39;6.1&#39; &#39;2,8&#39; 9.0 &#39;1.2&#39;]
+ [&#39;6.4&#39; &#39;2,9&#39; 7.0 &#39;1.3&#39;]
+ [&#39;6.6&#39; &#39;3&#39; 3.0 &#39;1.4&#39;]
+ [&#39;6.8&#39; &#39;2,8&#39; 4.0 &#39;1.4&#39;]
+ [&#39;6.7&#39; &#39;3&#39; 8.0 &#39;1.7&#39;]
+ [&#39;6&#39; &#39;2,9&#39; nan &#39;1.5&#39;]
+ [&#39;5.7&#39; &#39;2,6&#39; 5.0 &#39;1&#39;]
+ [&#39;5.5&#39; &#39;2,4&#39; 5.0 &#39;1.1&#39;]
+ [&#39;5.5&#39; &#39;2,4&#39; 8.0 &#39;1&#39;]
+ [&#39;5.8&#39; &#39;2,7&#39; 7.0 &#39;1.2&#39;]
+ [&#39;6&#39; &#39;2,7&#39; 9.0 &#39;1.6&#39;]
+ [&#39;5.4&#39; &#39;3&#39; 1.0 &#39;1.5&#39;]
+ [&#39;6&#39; &#39;3,4&#39; 5.0 &#39;1.6&#39;]
+ [&#39;6.7&#39; &#39;3,1&#39; 5.0 &#39;1.5&#39;]
+ [&#39;6.3&#39; &#39;2,3&#39; 7.0 &#39;1.3&#39;]
+ [&#39;5.6&#39; &#39;3&#39; 4.0 &#39;1.3&#39;]
+ [&#39;5.5&#39; &#39;2,5&#39; 1.0 &#39;1.3&#39;]
+ [&#39;5.5&#39; &#39;2,6&#39; nan &#39;1.2&#39;]
+ [&#39;6.1&#39; &#39;3&#39; 4.0 &#39;1.4&#39;]
+ [&#39;5.8&#39; &#39;2,6&#39; 6.0 &#39;1.2&#39;]
+ [&#39;5&#39; &#39;2,3&#39; nan &#39;1&#39;]
+ [&#39;5.6&#39; &#39;2,7&#39; 3.0 &#39;1.3&#39;]
+ [&#39;5.7&#39; &#39;3&#39; 2.0 &#39;1.2&#39;]
+ [&#39;5.7&#39; &#39;2,9&#39; 2.0 &#39;1.3&#39;]
+ [&#39;6.2&#39; &#39;2,9&#39; 2.0 &#39;1.3&#39;]
+ [&#39;5.1&#39; &#39;2,5&#39; 3.0 &#39;1.1&#39;]
+ [&#39;5.7&#39; &#39;2,8&#39; nan &#39;1.3&#39;]
+ [&#39;6.3&#39; &#39;3,3&#39; 1.0 &#39;2.5&#39;]
+ [&#39;5.8&#39; &#39;2,7&#39; nan &#39;1.9&#39;]
+ [&#39;7.1&#39; &#39;3&#39; 1.0 &#39;2.1&#39;]
+ [&#39;6.3&#39; &#39;2,9&#39; 9.0 &#39;1.8&#39;]
+ [&#39;6.5&#39; &#39;3&#39; 6.0 &#39;2.2&#39;]
+ [&#39;7.6&#39; &#39;3&#39; 8.0 &#39;2.1&#39;]
+ [&#39;4.9&#39; &#39;2,5&#39; 6.0 &#39;1.7&#39;]
+ [&#39;7.3&#39; &#39;2,9&#39; 5.0 &#39;1.8&#39;]
+ [&#39;6.7&#39; &#39;2,5&#39; 3.0 &#39;1.8&#39;]
+ [&#39;7.2&#39; &#39;3,6&#39; 8.0 &#39;2.5&#39;]
+ [&#39;6.5&#39; &#39;3,2&#39; 1.0 &#39;2&#39;]
+ [&#39;6.4&#39; &#39;2,7&#39; 1.0 &#39;1.9&#39;]
+ [&#39;6.8&#39; &#39;3&#39; 3.0 &#39;2.1&#39;]
+ [&#39;5.7&#39; &#39;2,5&#39; 5.0 &#39;2&#39;]
+ [&#39;5.8&#39; &#39;2,8&#39; nan &#39;2.4&#39;]
+ [&#39;6.4&#39; &#39;3,2&#39; 1.0 &#39;2.3&#39;]
+ [&#39;6.5&#39; &#39;3&#39; 3.0 &#39;1.8&#39;]
+ [&#39;7.7&#39; &#39;3,8&#39; 5.0 &#39;2.2&#39;]
+ [&#39;7.7&#39; &#39;2,6&#39; 7.0 &#39;2.3&#39;]
+ [&#39;6&#39; &#39;2,2&#39; 9.0 &#39;1.5&#39;]
+ [&#39;6.9&#39; &#39;3,2&#39; nan &#39;2.3&#39;]
+ [&#39;5.6&#39; &#39;2,8&#39; 7.0 &#39;2&#39;]
+ [&#39;7.7&#39; &#39;2,8&#39; 9.0 &#39;2&#39;]
+ [&#39;6.3&#39; &#39;2,7&#39; 7.0 &#39;1.8&#39;]
+ [&#39;6.7&#39; &#39;3,3&#39; 9.0 &#39;2.1&#39;]
+ [&#39;7.2&#39; &#39;3,2&#39; 7.0 &#39;1.8&#39;]
+ [&#39;6.2&#39; &#39;2,8&#39; nan &#39;1.8&#39;]
+ [&#39;6.1&#39; &#39;3&#39; 8.0 &#39;1.8&#39;]
+ [&#39;6.4&#39; &#39;2,8&#39; 9.0 &#39;2.1&#39;]
+ [&#39;7.2&#39; &#39;3&#39; 6.0 &#39;1.6&#39;]
+ [&#39;7.4&#39; &#39;2,8&#39; 8.0 &#39;1.9&#39;]
+ [&#39;7.9&#39; &#39;3,8&#39; 1.0 &#39;2&#39;]
+ [&#39;6.4&#39; &#39;2,8&#39; 4.0 &#39;2.2&#39;]
+ [&#39;6.3&#39; &#39;2,8&#39; 6.0 &#39;1.5&#39;]
+ [&#39;6.1&#39; &#39;2,6&#39; 1.0 &#39;1.4&#39;]
+ [&#39;7.7&#39; &#39;3&#39; 6.0 &#39;2.3&#39;]
+ [&#39;6.3&#39; &#39;3,4&#39; 1.0 &#39;2.4&#39;]
+ [&#39;6.4&#39; &#39;3,1&#39; 6.0 &#39;1.8&#39;]
+ [&#39;6&#39; &#39;3&#39; 5.0 &#39;1.8&#39;]
+ [&#39;6.9&#39; &#39;3,1&#39; 8.0 &#39;2.1&#39;]
+ [&#39;6.7&#39; &#39;3,1&#39; 4.0 &#39;2.4&#39;]
+ [&#39;6.9&#39; &#39;3,1&#39; 6.0 &#39;2.3&#39;]
+ [&#39;5.8&#39; &#39;2,7&#39; 1.0 &#39;1.9&#39;]
+ [&#39;6.8&#39; &#39;3,2&#39; 1.0 &#39;2.3&#39;]
+ [&#39;6.7&#39; &#39;3,3&#39; 9.0 &#39;2.5&#39;]
+ [&#39;6.7&#39; &#39;3&#39; 7.0 &#39;2.3&#39;]
+ [&#39;6.3&#39; &#39;2,5&#39; 2.0 &#39;1.9&#39;]
+ [&#39;6.5&#39; &#39;3&#39; nan &#39;2&#39;]
+ [&#39;6.2&#39; &#39;3,4&#39; 2.0 &#39;2.3&#39;]
+ [&#39;5.9&#39; &#39;3&#39; 4.0 &#39;1.8&#39;]
+ [nan nan 1.0 nan]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span> 
+    <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_5500</span>\<span class="mf">3918670243.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="nn">~\anaconda3\lib\site-packages\sklearn\tree\_classes.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight, check_input, X_idx_sorted)</span>
+<span class="g g-Whitespace">    </span><span class="mi">935</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">936</span><span class="s2"> </span>
+<span class="ne">--&gt; </span><span class="mi">937</span><span class="s2">         super().fit(</span>
+<span class="g g-Whitespace">    </span><span class="mi">938</span><span class="s2">             X,</span>
+<span class="g g-Whitespace">    </span><span class="mi">939</span><span class="s2">             y,</span>
+
+<span class="nn">~\anaconda3\lib\site-packages\sklearn\tree\_classes.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight, check_input, X_idx_sorted)</span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span><span class="s2">             check_X_params = dict(dtype=DTYPE, accept_sparse=&quot;csc&quot;)</span>
+<span class="g g-Whitespace">    </span><span class="mi">164</span><span class="s2">             check_y_params = dict(ensure_2d=False, dtype=None)</span>
+<span class="ne">--&gt; </span><span class="mi">165</span><span class="s2">             X, y = self._validate_data(</span>
+<span class="g g-Whitespace">    </span><span class="mi">166</span><span class="s2">                 X, y, validate_separately=(check_X_params, check_y_params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">167</span><span class="s2">             )</span>
+
+<span class="nn">~\anaconda3\lib\site-packages\sklearn\base.py</span> in <span class="ni">_validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">576</span><span class="s2">                 # :(</span>
+<span class="g g-Whitespace">    </span><span class="mi">577</span><span class="s2">                 check_X_params, check_y_params = validate_separately</span>
+<span class="ne">--&gt; </span><span class="mi">578</span><span class="s2">                 X = check_array(X, **check_X_params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">579</span><span class="s2">                 y = check_array(y, **check_y_params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">580</span><span class="s2">             else:</span>
+
+<span class="nn">~\anaconda3\lib\site-packages\sklearn\utils\validation.py</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator)</span>
+<span class="g g-Whitespace">    </span><span class="mi">744</span><span class="s2">                     array = array.astype(dtype, casting=&quot;unsafe&quot;, copy=False)</span>
+<span class="g g-Whitespace">    </span><span class="mi">745</span><span class="s2">                 else:</span>
+<span class="ne">--&gt; </span><span class="mi">746</span><span class="s2">                     array = np.asarray(array, order=order, dtype=dtype)</span>
+<span class="g g-Whitespace">    </span><span class="mi">747</span><span class="s2">             except ComplexWarning as complex_warning:</span>
+<span class="g g-Whitespace">    </span><span class="mi">748</span><span class="s2">                 raise ValueError(</span>
+
+<span class="ne">ValueError</span>: could not convert string to float: &#39;2,8&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot; DecisionTree Accuracy : &quot;</span><span class="p">,</span>
+    <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot; KNN Accuracy : &quot;</span><span class="p">,</span>
+    <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By bella
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
