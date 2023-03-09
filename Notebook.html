@@ -159,6 +159,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
 </ul>
 
     </div>
@@ -370,6 +371,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-5">Tugas 5</a></li>
 </ul>
 
             </nav>
@@ -394,16 +396,23 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Requirement already satisfied: snscrape in /usr/local/lib/python3.9/dist-packages (0.6.0.20230303)
+Collecting snscrape
+  Downloading snscrape-0.6.0.20230303-py3-none-any.whl (71 kB)
+?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/71.6 KB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">71.6/71.6 KB</span> <span class=" -Color -Color-Red">3.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hRequirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.6.3)
+Requirement already satisfied: requests[socks] in /usr/local/lib/python3.9/dist-packages (from snscrape) (2.25.1)
 Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.9.0)
 Requirement already satisfied: lxml in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.9.2)
-Requirement already satisfied: requests[socks] in /usr/local/lib/python3.9/dist-packages (from snscrape) (2.25.1)
-Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.6.3)
 Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2.10)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.26.14)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
 Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (4.0.0)
 Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.7.1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: snscrape
+Successfully installed snscrape-0.6.0.20230303
 </pre></div>
 </div>
 </div>
@@ -439,8 +448,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "e5fa43d189f443a1b74407cdbb6226aa"}</script><div class="output text_html">
-  <div id="df-2fb484ec-08a7-426e-8d6b-894e0ac06f50">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "a8ddea5db90c4732b9df483b4d3b8de7"}</script><div class="output text_html">
+  <div id="df-e479e812-0034-420b-ad7d-ef1ee7b375a3">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -468,33 +477,33 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
   <tbody>
     <tr>
       <th>0</th>
-      <td>edwinsaragih</td>
-      <td>@Idenyasia @sandiuno Mbak.. itu emang dipake p...</td>
-      <td>Bali, Indonesia</td>
+      <td>DarmawanZuhri</td>
+      <td>@never_alonely @KemenkeuRI , @DitjenPajakRI , ...</td>
+      <td>Indonesia</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>ahli_tilang</td>
-      <td>Om sandiuno mhn bantu RT - Jadi tinggi dan lan...</td>
-      <td>JAKARTA</td>
+      <td>DarmawanZuhri</td>
+      <td>@bozzvanc1 @KemenkeuRI , @DitjenPajakRI , @KPK...</td>
+      <td>Indonesia</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Heri73032637</td>
-      <td>Bang @sandiuno , bung @bahlillahadalia hemat s...</td>
-      <td></td>
+      <td>tribunpontianak</td>
+      <td>Desa Wisata Temajuk di Sambas Kalimantan Barat...</td>
+      <td>Jl Sungai Raya Dalam Kubu Raya</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>daraja_amron</td>
-      <td>@sandiuno Sarapanya soto lamongan pak..nyus hhe</td>
-      <td>bismillahirrahmaanirrahiim</td>
+      <td>TmApaLambakAceh</td>
+      <td>@sandiuno Saya juga sedih waktu pak Sandiaga U...</td>
+      <td></td>
     </tr>
     <tr>
       <th>4</th>
-      <td>NamungAbdiGusti</td>
-      <td>@dsneyfans Menurut pak menteri @sandiuno ini g...</td>
-      <td>unidentified.</td>
+      <td>tribunpontianak</td>
+      <td>3 Kampung Wisata di Kota Pontianak Kalimantan ...</td>
+      <td>Jl Sungai Raya Dalam Kubu Raya</td>
     </tr>
     <tr>
       <th>...</th>
@@ -504,39 +513,39 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
     </tr>
     <tr>
       <th>497</th>
-      <td>PorosHalangID</td>
-      <td>@arieparikesit @sandiuno Huvt</td>
-      <td>Indonesia</td>
+      <td>Islamyyyyyyy</td>
+      <td>@Anggaraafif_ @PorosHalangID @sandiuno Beberap...</td>
+      <td>east java</td>
     </tr>
     <tr>
       <th>498</th>
-      <td>PorosHalangID</td>
-      <td>@oshhha_ @sandiuno Miris malah liatnya. 😂</td>
-      <td>Indonesia</td>
+      <td>ayziayes</td>
+      <td>@PorosHalangID @sandiuno Santaiii minnnnn, kak...</td>
+      <td>Karawang</td>
     </tr>
     <tr>
       <th>499</th>
-      <td>alrianraka_</td>
-      <td>@PorosHalangID @sandiuno Agak maksa sih ini wk...</td>
-      <td></td>
+      <td>radenchandra</td>
+      <td>@Catatan_ali7 @PorosHalangID @sandiuno Terima ...</td>
+      <td>Depok</td>
     </tr>
     <tr>
       <th>500</th>
-      <td>Heymasjar</td>
-      <td>@AimR52 @Catatan_ali7 @karmapolsek @PorosHalan...</td>
-      <td>Gresik</td>
+      <td>listyan_Aji</td>
+      <td>@PorosHalangID @sandiuno Asli ini mah adminya ...</td>
+      <td>Manchester, England</td>
     </tr>
     <tr>
       <th>501</th>
-      <td>papafranku6666</td>
-      <td>@pawpaw2112 @AhmadFaisal_12_ @TyanBestyana @Po...</td>
+      <td>singopatran</td>
+      <td>@PorosHalangID @sandiuno ngeliat ini bukan nya...</td>
       <td></td>
     </tr>
   </tbody>
 </table>
 <p>502 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2fb484ec-08a7-426e-8d6b-894e0ac06f50')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e479e812-0034-420b-ad7d-ef1ee7b375a3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -587,12 +596,12 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2fb484ec-08a7-426e-8d6b-894e0ac06f50 button.colab-df-convert');
+          document.querySelector('#df-e479e812-0034-420b-ad7d-ef1ee7b375a3 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2fb484ec-08a7-426e-8d6b-894e0ac06f50');
+          const element = document.querySelector('#df-e479e812-0034-420b-ad7d-ef1ee7b375a3');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -741,62 +750,67 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 <span class="g g-Whitespace">    </span><span class="mi">705</span>                 <span class="n">method</span><span class="p">,</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_make_request</span><span class="nt">(self, conn, method, url, timeout, chunked, **httplib_request_kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">447</span>                     <span class="c1"># Python 3 (including for exceptions like SystemExit).</span>
-<span class="g g-Whitespace">    </span><span class="mi">448</span>                     <span class="c1"># Otherwise it looks like a bug in the code.</span>
-<span class="ne">--&gt; </span><span class="mi">449</span>                     <span class="n">six</span><span class="o">.</span><span class="n">raise_from</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">450</span>         <span class="k">except</span> <span class="p">(</span><span class="n">SocketTimeout</span><span class="p">,</span> <span class="n">BaseSSLError</span><span class="p">,</span> <span class="n">SocketError</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">451</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_raise_timeout</span><span class="p">(</span><span class="n">err</span><span class="o">=</span><span class="n">e</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout_value</span><span class="o">=</span><span class="n">read_timeout</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">384</span>         <span class="c1"># Trigger any extra validation we need to do.</span>
+<span class="g g-Whitespace">    </span><span class="mi">385</span>         <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">386</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_validate_conn</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">387</span>         <span class="k">except</span> <span class="p">(</span><span class="n">SocketTimeout</span><span class="p">,</span> <span class="n">BaseSSLError</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">388</span>             <span class="c1"># Py2 raises this as a BaseSSLError, Py3 raises it as socket timeout.</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/packages/six.py</span> in <span class="ni">raise_from</span><span class="nt">(value, from_value)</span>
+<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_validate_conn</span><span class="nt">(self, conn)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1040</span>         <span class="c1"># Force connect early to allow us to validate the connection.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1041</span>         <span class="k">if</span> <span class="ow">not</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;sock&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>  <span class="c1"># AppEngine might not have  `.sock`</span>
+<span class="ne">-&gt; </span><span class="mi">1042</span>             <span class="n">conn</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1043</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1044</span>         <span class="k">if</span> <span class="ow">not</span> <span class="n">conn</span><span class="o">.</span><span class="n">is_verified</span><span class="p">:</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_make_request</span><span class="nt">(self, conn, method, url, timeout, chunked, **httplib_request_kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">442</span>                 <span class="c1"># Python 3</span>
-<span class="g g-Whitespace">    </span><span class="mi">443</span>                 <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">444</span>                     <span class="n">httplib_response</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">getresponse</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">445</span>                 <span class="k">except</span> <span class="ne">BaseException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">446</span>                     <span class="c1"># Remove the TypeError from the exception chain in</span>
+<span class="nn">/usr/local/lib/python3.9/dist-packages/snscrape/base.py</span> in <span class="ni">connect</span><span class="nt">(self, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span> <span class="k">class</span> <span class="nc">_HTTPSConnection</span><span class="p">(</span><span class="n">urllib3</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">HTTPSConnection</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">def</span> <span class="nf">connect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">141</span>                 <span class="n">conn</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">142</span>                 <span class="c1">#FIXME: Uses undocumented attribute self.sock and beyond.</span>
+<span class="g g-Whitespace">    </span><span class="mi">143</span>                 <span class="k">try</span><span class="p">:</span>
 
-<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">getresponse</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1375</span>         <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1376</span>             <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1377</span>                 <span class="n">response</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1378</span>             <span class="k">except</span> <span class="ne">ConnectionError</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1379</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/connection.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">412</span>             <span class="n">context</span><span class="o">.</span><span class="n">load_default_certs</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">413</span> 
+<span class="ne">--&gt; </span><span class="mi">414</span>         <span class="bp">self</span><span class="o">.</span><span class="n">sock</span> <span class="o">=</span> <span class="n">ssl_wrap_socket</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">415</span>             <span class="n">sock</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">416</span>             <span class="n">keyfile</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">key_file</span><span class="p">,</span>
 
-<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">begin</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">318</span>         <span class="c1"># read until we get a non-100 response</span>
-<span class="g g-Whitespace">    </span><span class="mi">319</span>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">320</span>             <span class="n">version</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">reason</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_status</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">321</span>             <span class="k">if</span> <span class="n">status</span> <span class="o">!=</span> <span class="n">CONTINUE</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">322</span>                 <span class="k">break</span>
+<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/util/ssl_.py</span> in <span class="ni">ssl_wrap_socket</span><span class="nt">(sock, keyfile, certfile, cert_reqs, ca_certs, server_hostname, ssl_version, ciphers, ssl_context, ca_cert_dir, key_password, ca_cert_data, tls_in_tls)</span>
+<span class="g g-Whitespace">    </span><span class="mi">447</span> 
+<span class="g g-Whitespace">    </span><span class="mi">448</span>     <span class="k">if</span> <span class="n">send_sni</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">449</span>         <span class="n">ssl_sock</span> <span class="o">=</span> <span class="n">_ssl_wrap_socket_impl</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">450</span>             <span class="n">sock</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">tls_in_tls</span><span class="p">,</span> <span class="n">server_hostname</span><span class="o">=</span><span class="n">server_hostname</span>
+<span class="g g-Whitespace">    </span><span class="mi">451</span>         <span class="p">)</span>
 
-<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">_read_status</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">279</span> 
-<span class="g g-Whitespace">    </span><span class="mi">280</span>     <span class="k">def</span> <span class="nf">_read_status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">281</span>         <span class="n">line</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fp</span><span class="o">.</span><span class="n">readline</span><span class="p">(</span><span class="n">_MAXLINE</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="s2">&quot;iso-8859-1&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">282</span>         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">_MAXLINE</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">283</span>             <span class="k">raise</span> <span class="n">LineTooLong</span><span class="p">(</span><span class="s2">&quot;status line&quot;</span><span class="p">)</span>
+<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/util/ssl_.py</span> in <span class="ni">_ssl_wrap_socket_impl</span><span class="nt">(sock, ssl_context, tls_in_tls, server_hostname)</span>
+<span class="g g-Whitespace">    </span><span class="mi">491</span> 
+<span class="g g-Whitespace">    </span><span class="mi">492</span>     <span class="k">if</span> <span class="n">server_hostname</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">493</span>         <span class="k">return</span> <span class="n">ssl_context</span><span class="o">.</span><span class="n">wrap_socket</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="n">server_hostname</span><span class="o">=</span><span class="n">server_hostname</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">494</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">495</span>         <span class="k">return</span> <span class="n">ssl_context</span><span class="o">.</span><span class="n">wrap_socket</span><span class="p">(</span><span class="n">sock</span><span class="p">)</span>
 
-<span class="nn">/usr/lib/python3.9/socket.py</span> in <span class="ni">readinto</span><span class="nt">(self, b)</span>
-<span class="g g-Whitespace">    </span><span class="mi">702</span>         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">703</span>             <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">704</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sock</span><span class="o">.</span><span class="n">recv_into</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">705</span>             <span class="k">except</span> <span class="n">timeout</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">706</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_timeout_occurred</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="nn">/usr/lib/python3.9/ssl.py</span> in <span class="ni">wrap_socket</span><span class="nt">(self, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, session)</span>
+<span class="g g-Whitespace">    </span><span class="mi">499</span>         <span class="c1"># SSLSocket class handles server_hostname encoding before it calls</span>
+<span class="g g-Whitespace">    </span><span class="mi">500</span>         <span class="c1"># ctx._wrap_socket()</span>
+<span class="ne">--&gt; </span><span class="mi">501</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sslsocket_class</span><span class="o">.</span><span class="n">_create</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">502</span>             <span class="n">sock</span><span class="o">=</span><span class="n">sock</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">503</span>             <span class="n">server_side</span><span class="o">=</span><span class="n">server_side</span><span class="p">,</span>
 
-<span class="nn">/usr/lib/python3.9/ssl.py</span> in <span class="ni">recv_into</span><span class="nt">(self, buffer, nbytes, flags)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1240</span>                   <span class="s2">&quot;non-zero flags not allowed in calls to recv_into() on </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span>
-<span class="g g-Whitespace">   </span><span class="mi">1241</span>                   <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1242</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">nbytes</span><span class="p">,</span> <span class="n">buffer</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1243</span>         <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1244</span>             <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">recv_into</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">nbytes</span><span class="p">,</span> <span class="n">flags</span><span class="p">)</span>
+<span class="nn">/usr/lib/python3.9/ssl.py</span> in <span class="ni">_create</span><span class="nt">(cls, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, context, session)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1039</span>                         <span class="c1"># non-blocking</span>
+<span class="g g-Whitespace">   </span><span class="mi">1040</span>                         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;do_handshake_on_connect should not be specified for non-blocking sockets&quot;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1041</span>                     <span class="bp">self</span><span class="o">.</span><span class="n">do_handshake</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1042</span>             <span class="k">except</span> <span class="p">(</span><span class="ne">OSError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1043</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="nn">/usr/lib/python3.9/ssl.py</span> in <span class="ni">read</span><span class="nt">(self, len, buffer)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1098</span>         <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1099</span>             <span class="k">if</span> <span class="n">buffer</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1100</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sslobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">len</span><span class="p">,</span> <span class="n">buffer</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1101</span>             <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1102</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sslobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span>
+<span class="nn">/usr/lib/python3.9/ssl.py</span> in <span class="ni">do_handshake</span><span class="nt">(self, block)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1308</span>             <span class="k">if</span> <span class="n">timeout</span> <span class="o">==</span> <span class="mf">0.0</span> <span class="ow">and</span> <span class="n">block</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1309</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">settimeout</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1310</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_sslobj</span><span class="o">.</span><span class="n">do_handshake</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1311</span>         <span class="k">finally</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1312</span>             <span class="bp">self</span><span class="o">.</span><span class="n">settimeout</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -1481,6 +1495,7 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 <div class="tex2jax_ignore mathjax_ignore section" id="tugas-4-pipelines">
 <h1>TUGAS 4 (Pipelines)<a class="headerlink" href="#tugas-4-pipelines" title="Permalink to this heading">#</a></h1>
 <p>Pertama tama saya memisahkan kolom Petal Length, Petal Width, Sepal Length, dan Sepal Width + class dan ditambah masing-masing kolom id di csv. kemudian saya mengkonversi csv to sql menjadi script sql. setelah masing-masing kolom telah di ubah ke script sql, selanjutnya saya memasukkan data tersebut ke masing” aplikasi database yaitu mysql, sql server, dan postgres sql local + elephant. Pertama, kolom sepal length saya masukkan ke database postgressql local, kemudian kolom sepal width saya masukkkan ke database postgressql elephantsql, kolom petal length dimasukkan ke database mysql local, dan terakhir kolom petalwidth +class dimasukkan ke database sql server, semua dimasukkkan sesuai dengan tahapan masing” database tersebut dengan menggunakan script sql yang sudah dikonversi dari csv. kemudian setelah berhasil memasukkan ke semua database lanjut menjadikan 1 kolom-kolom tersebut. disini saya mencoba menggunakan orchest namun tidak bisa untuk yang local (hanya bisa postgrest elephantsql saja) sehingga saya mencoba menggabungkan data-data dari tiap database tersebut dengan menggunakan google colab.</p>
+<p><a class="reference external" href="http://localhost:8888/?token=588da944fa3883b6e0271d2632bd3da327609e4cdea2d73d">http://localhost:8888/?token=588da944fa3883b6e0271d2632bd3da327609e4cdea2d73d</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyodbc</span> 
@@ -1730,12 +1745,12 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
   <span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
   <span class="n">user</span><span class="o">=</span><span class="s2">&quot;root&quot;</span><span class="p">,</span>
   <span class="n">password</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-  <span class="n">database</span><span class="o">=</span><span class="s2">&quot;prosain200411100082&quot;</span>
+  <span class="n">database</span><span class="o">=</span><span class="s2">&quot;prosaindata20041110082&quot;</span>
 <span class="p">)</span>
 
 <span class="n">mycursor</span> <span class="o">=</span> <span class="n">mydb</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 
-<span class="n">mycursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM iris_mysql&quot;</span><span class="p">)</span>
+<span class="n">mycursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM iris&quot;</span><span class="p">)</span>
 
 <span class="n">myresult</span> <span class="o">=</span> <span class="n">mycursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 <span class="n">mycursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -1771,28 +1786,28 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
   <tbody>
     <tr>
       <th>0</th>
-      <td>ID ;Petallength</td>
-      <td>NaN</td>
+      <td>1</td>
+      <td>1.4</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1;1</td>
-      <td>4.0</td>
+      <td>2</td>
+      <td>1.4</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2;1</td>
-      <td>4.0</td>
+      <td>3</td>
+      <td>1.3</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>3;1</td>
-      <td>3.0</td>
+      <td>4</td>
+      <td>1.5</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>4;1</td>
-      <td>5.0</td>
+      <td>5</td>
+      <td>1.4</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1800,33 +1815,33 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
       <td>...</td>
     </tr>
     <tr>
+      <th>145</th>
+      <td>146</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
       <th>146</th>
-      <td>146;5</td>
-      <td>2.0</td>
+      <td>147</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>147</th>
-      <td>147;5</td>
-      <td>NaN</td>
+      <td>148</td>
+      <td>5.2</td>
     </tr>
     <tr>
       <th>148</th>
-      <td>148;5</td>
-      <td>2.0</td>
+      <td>149</td>
+      <td>5.4</td>
     </tr>
     <tr>
       <th>149</th>
-      <td>149;5</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <th>150</th>
-      <td>150;5</td>
-      <td>1.0</td>
+      <td>150</td>
+      <td>5.1</td>
     </tr>
   </tbody>
 </table>
-<p>151 rows × 2 columns</p>
+<p>150 rows × 2 columns</p>
 </div></div></div>
 </div>
 <div class="cell docutils container">
@@ -1859,7 +1874,7 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
       <th></th>
       <th>id</th>
       <th>sepallength</th>
-      <th>ID</th>
+      <th>id</th>
       <th>sepalwidth</th>
       <th>id</th>
       <th>petallength</th>
@@ -1871,61 +1886,61 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
   <tbody>
     <tr>
       <th>0</th>
-      <td>1.0</td>
+      <td>1</td>
       <td>5.1</td>
-      <td>1.0</td>
-      <td>3,5</td>
-      <td>ID ;Petallength</td>
-      <td>NaN</td>
-      <td>1.0</td>
+      <td>1</td>
+      <td>3.5</td>
+      <td>1</td>
+      <td>1.4</td>
+      <td>1</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2.0</td>
+      <td>2</td>
       <td>4.9</td>
-      <td>2.0</td>
+      <td>2</td>
       <td>3</td>
-      <td>1;1</td>
-      <td>4.0</td>
-      <td>2.0</td>
+      <td>2</td>
+      <td>1.4</td>
+      <td>2</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3.0</td>
+      <td>3</td>
       <td>4.7</td>
-      <td>3.0</td>
-      <td>3,2</td>
-      <td>2;1</td>
-      <td>4.0</td>
-      <td>3.0</td>
+      <td>3</td>
+      <td>3.2</td>
+      <td>3</td>
+      <td>1.3</td>
+      <td>3</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4.0</td>
+      <td>4</td>
       <td>4.6</td>
-      <td>4.0</td>
-      <td>3,1</td>
-      <td>3;1</td>
-      <td>3.0</td>
-      <td>4.0</td>
+      <td>4</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1.5</td>
+      <td>4</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>5.0</td>
       <td>5</td>
-      <td>5.0</td>
-      <td>3,6</td>
-      <td>4;1</td>
-      <td>5.0</td>
-      <td>5.0</td>
+      <td>5</td>
+      <td>5</td>
+      <td>3.6</td>
+      <td>5</td>
+      <td>1.4</td>
+      <td>5</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
@@ -1942,68 +1957,68 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
       <td>...</td>
     </tr>
     <tr>
+      <th>145</th>
+      <td>146</td>
+      <td>6.7</td>
+      <td>146</td>
+      <td>3</td>
+      <td>146</td>
+      <td>5.2</td>
+      <td>146</td>
+      <td>2.3</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
       <th>146</th>
-      <td>147.0</td>
+      <td>147</td>
       <td>6.3</td>
-      <td>147.0</td>
-      <td>2,5</td>
-      <td>146;5</td>
-      <td>2.0</td>
-      <td>147.0</td>
+      <td>147</td>
+      <td>2.5</td>
+      <td>147</td>
+      <td>5.0</td>
+      <td>147</td>
       <td>1.9</td>
       <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>147</th>
-      <td>148.0</td>
+      <td>148</td>
       <td>6.5</td>
-      <td>148.0</td>
+      <td>148</td>
       <td>3</td>
-      <td>147;5</td>
-      <td>NaN</td>
-      <td>148.0</td>
+      <td>148</td>
+      <td>5.2</td>
+      <td>148</td>
       <td>2</td>
       <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>148</th>
-      <td>149.0</td>
+      <td>149</td>
       <td>6.2</td>
-      <td>149.0</td>
-      <td>3,4</td>
-      <td>148;5</td>
-      <td>2.0</td>
-      <td>149.0</td>
+      <td>149</td>
+      <td>3.4</td>
+      <td>149</td>
+      <td>5.4</td>
+      <td>149</td>
       <td>2.3</td>
       <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>149</th>
-      <td>150.0</td>
+      <td>150</td>
       <td>5.9</td>
-      <td>150.0</td>
+      <td>150</td>
       <td>3</td>
-      <td>149;5</td>
-      <td>4.0</td>
-      <td>150.0</td>
+      <td>150</td>
+      <td>5.1</td>
+      <td>150</td>
       <td>1.8</td>
       <td>Iris-virginica</td>
     </tr>
-    <tr>
-      <th>150</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>150;5</td>
-      <td>1.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
   </tbody>
 </table>
-<p>151 rows × 9 columns</p>
+<p>150 rows × 9 columns</p>
 </div></div></div>
 </div>
 <div class="cell docutils container">
@@ -2043,8 +2058,8 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
     <tr>
       <th>0</th>
       <td>5.1</td>
-      <td>3,5</td>
-      <td>NaN</td>
+      <td>3.5</td>
+      <td>1.4</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
@@ -2052,31 +2067,31 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
       <th>1</th>
       <td>4.9</td>
       <td>3</td>
-      <td>4.0</td>
+      <td>1.4</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>2</th>
       <td>4.7</td>
-      <td>3,2</td>
-      <td>4.0</td>
+      <td>3.2</td>
+      <td>1.3</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>3</th>
       <td>4.6</td>
-      <td>3,1</td>
-      <td>3.0</td>
+      <td>3.1</td>
+      <td>1.5</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>4</th>
       <td>5</td>
-      <td>3,6</td>
-      <td>5.0</td>
+      <td>3.6</td>
+      <td>1.4</td>
       <td>0.2</td>
       <td>Iris-setosa</td>
     </tr>
@@ -2089,10 +2104,18 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
       <td>...</td>
     </tr>
     <tr>
+      <th>145</th>
+      <td>6.7</td>
+      <td>3</td>
+      <td>5.2</td>
+      <td>2.3</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
       <th>146</th>
       <td>6.3</td>
-      <td>2,5</td>
-      <td>2.0</td>
+      <td>2.5</td>
+      <td>5.0</td>
       <td>1.9</td>
       <td>Iris-virginica</td>
     </tr>
@@ -2100,15 +2123,15 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
       <th>147</th>
       <td>6.5</td>
       <td>3</td>
-      <td>NaN</td>
+      <td>5.2</td>
       <td>2</td>
       <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>148</th>
       <td>6.2</td>
-      <td>3,4</td>
-      <td>2.0</td>
+      <td>3.4</td>
+      <td>5.4</td>
       <td>2.3</td>
       <td>Iris-virginica</td>
     </tr>
@@ -2116,21 +2139,13 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
       <th>149</th>
       <td>5.9</td>
       <td>3</td>
-      <td>4.0</td>
+      <td>5.1</td>
       <td>1.8</td>
       <td>Iris-virginica</td>
     </tr>
-    <tr>
-      <th>150</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
   </tbody>
 </table>
-<p>151 rows × 5 columns</p>
+<p>150 rows × 5 columns</p>
 </div></div></div>
 </div>
 <div class="cell docutils container">
@@ -2142,157 +2157,156 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[&#39;5.1&#39; &#39;3,5&#39; nan &#39;0.2&#39;]
- [&#39;4.9&#39; &#39;3&#39; 4.0 &#39;0.2&#39;]
- [&#39;4.7&#39; &#39;3,2&#39; 4.0 &#39;0.2&#39;]
- [&#39;4.6&#39; &#39;3,1&#39; 3.0 &#39;0.2&#39;]
- [&#39;5&#39; &#39;3,6&#39; 5.0 &#39;0.2&#39;]
- [&#39;5.4&#39; &#39;3,9&#39; 4.0 &#39;0.4&#39;]
- [&#39;4.6&#39; &#39;3,4&#39; 7.0 &#39;0.3&#39;]
- [&#39;5&#39; &#39;3,4&#39; 4.0 &#39;0.2&#39;]
- [&#39;4.4&#39; &#39;2,9&#39; 5.0 &#39;0.2&#39;]
- [&#39;4.9&#39; &#39;3,1&#39; 4.0 &#39;0.1&#39;]
- [&#39;5.4&#39; &#39;3,7&#39; 5.0 &#39;0.2&#39;]
- [&#39;4.8&#39; &#39;3,4&#39; 5.0 &#39;0.2&#39;]
- [&#39;4.8&#39; &#39;3&#39; 6.0 &#39;0.1&#39;]
- [&#39;4.3&#39; &#39;3&#39; 4.0 &#39;0.1&#39;]
- [&#39;5.8&#39; &#39;4&#39; 1.0 &#39;0.2&#39;]
- [&#39;5.7&#39; &#39;4,4&#39; 2.0 &#39;0.4&#39;]
- [&#39;5.4&#39; &#39;3,9&#39; 5.0 &#39;0.4&#39;]
- [&#39;5.1&#39; &#39;3,5&#39; 3.0 &#39;0.3&#39;]
- [&#39;5.7&#39; &#39;3,8&#39; 4.0 &#39;0.3&#39;]
- [&#39;5.1&#39; &#39;3,8&#39; 7.0 &#39;0.3&#39;]
- [&#39;5.4&#39; &#39;3,4&#39; 5.0 &#39;0.2&#39;]
- [&#39;5.1&#39; &#39;3,7&#39; 7.0 &#39;0.4&#39;]
- [&#39;4.6&#39; &#39;3,6&#39; 5.0 &#39;0.2&#39;]
- [&#39;5.1&#39; &#39;3,3&#39; nan &#39;0.5&#39;]
- [&#39;4.8&#39; &#39;3,4&#39; 7.0 &#39;0.2&#39;]
- [&#39;5&#39; &#39;3&#39; 9.0 &#39;0.2&#39;]
- [&#39;5&#39; &#39;3,4&#39; 6.0 &#39;0.4&#39;]
- [&#39;5.2&#39; &#39;3,5&#39; 6.0 &#39;0.2&#39;]
- [&#39;5.2&#39; &#39;3,4&#39; 5.0 &#39;0.2&#39;]
- [&#39;4.7&#39; &#39;3,2&#39; 4.0 &#39;0.2&#39;]
- [&#39;4.8&#39; &#39;3,1&#39; 6.0 &#39;0.2&#39;]
- [&#39;5.4&#39; &#39;3,4&#39; 6.0 &#39;0.4&#39;]
- [&#39;5.2&#39; &#39;4,1&#39; 5.0 &#39;0.1&#39;]
- [&#39;5.5&#39; &#39;4,2&#39; 5.0 &#39;0.2&#39;]
- [&#39;4.9&#39; &#39;3,1&#39; 4.0 &#39;0.1&#39;]
- [&#39;5&#39; &#39;3,2&#39; 5.0 &#39;0.2&#39;]
- [&#39;5.5&#39; &#39;3,5&#39; 2.0 &#39;0.2&#39;]
- [&#39;4.9&#39; &#39;3,1&#39; 3.0 &#39;0.1&#39;]
- [&#39;4.4&#39; &#39;3&#39; 5.0 &#39;0.2&#39;]
- [&#39;5.1&#39; &#39;3,4&#39; 3.0 &#39;0.2&#39;]
- [&#39;5&#39; &#39;3,5&#39; 5.0 &#39;0.3&#39;]
- [&#39;4.5&#39; &#39;2,3&#39; 3.0 &#39;0.3&#39;]
- [&#39;4.4&#39; &#39;3,2&#39; 3.0 &#39;0.2&#39;]
- [&#39;5&#39; &#39;3,5&#39; 3.0 &#39;0.6&#39;]
- [&#39;5.1&#39; &#39;3,8&#39; 6.0 &#39;0.4&#39;]
- [&#39;4.8&#39; &#39;3&#39; 9.0 &#39;0.3&#39;]
- [&#39;5.1&#39; &#39;3,8&#39; 4.0 &#39;0.2&#39;]
- [&#39;4.6&#39; &#39;3,2&#39; 6.0 &#39;0.2&#39;]
- [&#39;5.3&#39; &#39;3,7&#39; 4.0 &#39;0.2&#39;]
- [&#39;5&#39; &#39;3,3&#39; 5.0 &#39;0.2&#39;]
- [&#39;7&#39; &#39;3,2&#39; 4.0 &#39;1.4&#39;]
- [&#39;6.4&#39; &#39;3,2&#39; 7.0 &#39;1.5&#39;]
- [&#39;6.9&#39; &#39;3,1&#39; 5.0 &#39;1.5&#39;]
- [&#39;5.5&#39; &#39;2,3&#39; 9.0 &#39;1.3&#39;]
- [&#39;6.5&#39; &#39;2,8&#39; nan &#39;1.5&#39;]
- [&#39;5.7&#39; &#39;2,8&#39; 6.0 &#39;1.3&#39;]
- [&#39;6.3&#39; &#39;3,3&#39; 5.0 &#39;1.6&#39;]
- [&#39;4.9&#39; &#39;2,4&#39; 7.0 &#39;1&#39;]
- [&#39;6.6&#39; &#39;2,9&#39; 3.0 &#39;1.3&#39;]
- [&#39;5.2&#39; &#39;2,7&#39; 6.0 &#39;1.4&#39;]
- [&#39;5&#39; &#39;2&#39; 9.0 &#39;1&#39;]
- [&#39;5.9&#39; &#39;3&#39; 5.0 &#39;1.5&#39;]
- [&#39;6&#39; &#39;2,2&#39; 2.0 &#39;1&#39;]
- [&#39;6.1&#39; &#39;2,9&#39; nan &#39;1.4&#39;]
- [&#39;5.6&#39; &#39;2,9&#39; 7.0 &#39;1.3&#39;]
- [&#39;6.7&#39; &#39;3,1&#39; 6.0 &#39;1.4&#39;]
- [&#39;5.6&#39; &#39;3&#39; 4.0 &#39;1.5&#39;]
- [&#39;5.8&#39; &#39;2,7&#39; 5.0 &#39;1&#39;]
- [&#39;6.2&#39; &#39;2,2&#39; 1.0 &#39;1.5&#39;]
- [&#39;5.6&#39; &#39;2,5&#39; 5.0 &#39;1.1&#39;]
- [&#39;5.9&#39; &#39;3,2&#39; 9.0 &#39;1.8&#39;]
- [&#39;6.1&#39; &#39;2,8&#39; 8.0 &#39;1.3&#39;]
- [&#39;6.3&#39; &#39;2,5&#39; nan &#39;1.5&#39;]
- [&#39;6.1&#39; &#39;2,8&#39; 9.0 &#39;1.2&#39;]
- [&#39;6.4&#39; &#39;2,9&#39; 7.0 &#39;1.3&#39;]
- [&#39;6.6&#39; &#39;3&#39; 3.0 &#39;1.4&#39;]
- [&#39;6.8&#39; &#39;2,8&#39; 4.0 &#39;1.4&#39;]
- [&#39;6.7&#39; &#39;3&#39; 8.0 &#39;1.7&#39;]
- [&#39;6&#39; &#39;2,9&#39; nan &#39;1.5&#39;]
- [&#39;5.7&#39; &#39;2,6&#39; 5.0 &#39;1&#39;]
- [&#39;5.5&#39; &#39;2,4&#39; 5.0 &#39;1.1&#39;]
- [&#39;5.5&#39; &#39;2,4&#39; 8.0 &#39;1&#39;]
- [&#39;5.8&#39; &#39;2,7&#39; 7.0 &#39;1.2&#39;]
- [&#39;6&#39; &#39;2,7&#39; 9.0 &#39;1.6&#39;]
- [&#39;5.4&#39; &#39;3&#39; 1.0 &#39;1.5&#39;]
- [&#39;6&#39; &#39;3,4&#39; 5.0 &#39;1.6&#39;]
- [&#39;6.7&#39; &#39;3,1&#39; 5.0 &#39;1.5&#39;]
- [&#39;6.3&#39; &#39;2,3&#39; 7.0 &#39;1.3&#39;]
- [&#39;5.6&#39; &#39;3&#39; 4.0 &#39;1.3&#39;]
- [&#39;5.5&#39; &#39;2,5&#39; 1.0 &#39;1.3&#39;]
- [&#39;5.5&#39; &#39;2,6&#39; nan &#39;1.2&#39;]
- [&#39;6.1&#39; &#39;3&#39; 4.0 &#39;1.4&#39;]
- [&#39;5.8&#39; &#39;2,6&#39; 6.0 &#39;1.2&#39;]
- [&#39;5&#39; &#39;2,3&#39; nan &#39;1&#39;]
- [&#39;5.6&#39; &#39;2,7&#39; 3.0 &#39;1.3&#39;]
- [&#39;5.7&#39; &#39;3&#39; 2.0 &#39;1.2&#39;]
- [&#39;5.7&#39; &#39;2,9&#39; 2.0 &#39;1.3&#39;]
- [&#39;6.2&#39; &#39;2,9&#39; 2.0 &#39;1.3&#39;]
- [&#39;5.1&#39; &#39;2,5&#39; 3.0 &#39;1.1&#39;]
- [&#39;5.7&#39; &#39;2,8&#39; nan &#39;1.3&#39;]
- [&#39;6.3&#39; &#39;3,3&#39; 1.0 &#39;2.5&#39;]
- [&#39;5.8&#39; &#39;2,7&#39; nan &#39;1.9&#39;]
- [&#39;7.1&#39; &#39;3&#39; 1.0 &#39;2.1&#39;]
- [&#39;6.3&#39; &#39;2,9&#39; 9.0 &#39;1.8&#39;]
- [&#39;6.5&#39; &#39;3&#39; 6.0 &#39;2.2&#39;]
- [&#39;7.6&#39; &#39;3&#39; 8.0 &#39;2.1&#39;]
- [&#39;4.9&#39; &#39;2,5&#39; 6.0 &#39;1.7&#39;]
- [&#39;7.3&#39; &#39;2,9&#39; 5.0 &#39;1.8&#39;]
- [&#39;6.7&#39; &#39;2,5&#39; 3.0 &#39;1.8&#39;]
- [&#39;7.2&#39; &#39;3,6&#39; 8.0 &#39;2.5&#39;]
- [&#39;6.5&#39; &#39;3,2&#39; 1.0 &#39;2&#39;]
- [&#39;6.4&#39; &#39;2,7&#39; 1.0 &#39;1.9&#39;]
- [&#39;6.8&#39; &#39;3&#39; 3.0 &#39;2.1&#39;]
- [&#39;5.7&#39; &#39;2,5&#39; 5.0 &#39;2&#39;]
- [&#39;5.8&#39; &#39;2,8&#39; nan &#39;2.4&#39;]
- [&#39;6.4&#39; &#39;3,2&#39; 1.0 &#39;2.3&#39;]
- [&#39;6.5&#39; &#39;3&#39; 3.0 &#39;1.8&#39;]
- [&#39;7.7&#39; &#39;3,8&#39; 5.0 &#39;2.2&#39;]
- [&#39;7.7&#39; &#39;2,6&#39; 7.0 &#39;2.3&#39;]
- [&#39;6&#39; &#39;2,2&#39; 9.0 &#39;1.5&#39;]
- [&#39;6.9&#39; &#39;3,2&#39; nan &#39;2.3&#39;]
- [&#39;5.6&#39; &#39;2,8&#39; 7.0 &#39;2&#39;]
- [&#39;7.7&#39; &#39;2,8&#39; 9.0 &#39;2&#39;]
- [&#39;6.3&#39; &#39;2,7&#39; 7.0 &#39;1.8&#39;]
- [&#39;6.7&#39; &#39;3,3&#39; 9.0 &#39;2.1&#39;]
- [&#39;7.2&#39; &#39;3,2&#39; 7.0 &#39;1.8&#39;]
- [&#39;6.2&#39; &#39;2,8&#39; nan &#39;1.8&#39;]
- [&#39;6.1&#39; &#39;3&#39; 8.0 &#39;1.8&#39;]
- [&#39;6.4&#39; &#39;2,8&#39; 9.0 &#39;2.1&#39;]
- [&#39;7.2&#39; &#39;3&#39; 6.0 &#39;1.6&#39;]
- [&#39;7.4&#39; &#39;2,8&#39; 8.0 &#39;1.9&#39;]
- [&#39;7.9&#39; &#39;3,8&#39; 1.0 &#39;2&#39;]
- [&#39;6.4&#39; &#39;2,8&#39; 4.0 &#39;2.2&#39;]
- [&#39;6.3&#39; &#39;2,8&#39; 6.0 &#39;1.5&#39;]
- [&#39;6.1&#39; &#39;2,6&#39; 1.0 &#39;1.4&#39;]
- [&#39;7.7&#39; &#39;3&#39; 6.0 &#39;2.3&#39;]
- [&#39;6.3&#39; &#39;3,4&#39; 1.0 &#39;2.4&#39;]
- [&#39;6.4&#39; &#39;3,1&#39; 6.0 &#39;1.8&#39;]
- [&#39;6&#39; &#39;3&#39; 5.0 &#39;1.8&#39;]
- [&#39;6.9&#39; &#39;3,1&#39; 8.0 &#39;2.1&#39;]
- [&#39;6.7&#39; &#39;3,1&#39; 4.0 &#39;2.4&#39;]
- [&#39;6.9&#39; &#39;3,1&#39; 6.0 &#39;2.3&#39;]
- [&#39;5.8&#39; &#39;2,7&#39; 1.0 &#39;1.9&#39;]
- [&#39;6.8&#39; &#39;3,2&#39; 1.0 &#39;2.3&#39;]
- [&#39;6.7&#39; &#39;3,3&#39; 9.0 &#39;2.5&#39;]
- [&#39;6.7&#39; &#39;3&#39; 7.0 &#39;2.3&#39;]
- [&#39;6.3&#39; &#39;2,5&#39; 2.0 &#39;1.9&#39;]
- [&#39;6.5&#39; &#39;3&#39; nan &#39;2&#39;]
- [&#39;6.2&#39; &#39;3,4&#39; 2.0 &#39;2.3&#39;]
- [&#39;5.9&#39; &#39;3&#39; 4.0 &#39;1.8&#39;]
- [nan nan 1.0 nan]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[&#39;5.1&#39; &#39;3.5&#39; 1.4 &#39;0.2&#39;]
+ [&#39;4.9&#39; &#39;3&#39; 1.4 &#39;0.2&#39;]
+ [&#39;4.7&#39; &#39;3.2&#39; 1.3 &#39;0.2&#39;]
+ [&#39;4.6&#39; &#39;3.1&#39; 1.5 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3.6&#39; 1.4 &#39;0.2&#39;]
+ [&#39;5.4&#39; &#39;3.9&#39; 1.7 &#39;0.4&#39;]
+ [&#39;4.6&#39; &#39;3.4&#39; 1.4 &#39;0.3&#39;]
+ [&#39;5&#39; &#39;3.4&#39; 1.5 &#39;0.2&#39;]
+ [&#39;4.4&#39; &#39;2.9&#39; 1.4 &#39;0.2&#39;]
+ [&#39;4.9&#39; &#39;3.1&#39; 1.5 &#39;0.1&#39;]
+ [&#39;5.4&#39; &#39;3.7&#39; 1.5 &#39;0.2&#39;]
+ [&#39;4.8&#39; &#39;3.4&#39; 1.6 &#39;0.2&#39;]
+ [&#39;4.8&#39; &#39;3&#39; 1.4 &#39;0.1&#39;]
+ [&#39;4.3&#39; &#39;3&#39; 1.1 &#39;0.1&#39;]
+ [&#39;5.8&#39; &#39;4&#39; 1.2 &#39;0.2&#39;]
+ [&#39;5.7&#39; &#39;4.4&#39; 1.5 &#39;0.4&#39;]
+ [&#39;5.4&#39; &#39;3.9&#39; 1.3 &#39;0.4&#39;]
+ [&#39;5.1&#39; &#39;3.5&#39; 1.4 &#39;0.3&#39;]
+ [&#39;5.7&#39; &#39;3.8&#39; 1.7 &#39;0.3&#39;]
+ [&#39;5.1&#39; &#39;3.8&#39; 1.5 &#39;0.3&#39;]
+ [&#39;5.4&#39; &#39;3.4&#39; 1.7 &#39;0.2&#39;]
+ [&#39;5.1&#39; &#39;3.7&#39; 1.5 &#39;0.4&#39;]
+ [&#39;4.6&#39; &#39;3.6&#39; 1.0 &#39;0.2&#39;]
+ [&#39;5.1&#39; &#39;3.3&#39; 1.7 &#39;0.5&#39;]
+ [&#39;4.8&#39; &#39;3.4&#39; 1.9 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3&#39; 1.6 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3.4&#39; 1.6 &#39;0.4&#39;]
+ [&#39;5.2&#39; &#39;3.5&#39; 1.5 &#39;0.2&#39;]
+ [&#39;5.2&#39; &#39;3.4&#39; 1.4 &#39;0.2&#39;]
+ [&#39;4.7&#39; &#39;3.2&#39; 1.6 &#39;0.2&#39;]
+ [&#39;4.8&#39; &#39;3.1&#39; 1.6 &#39;0.2&#39;]
+ [&#39;5.4&#39; &#39;3.4&#39; 1.5 &#39;0.4&#39;]
+ [&#39;5.2&#39; &#39;4.1&#39; 1.5 &#39;0.1&#39;]
+ [&#39;5.5&#39; &#39;4.2&#39; 1.4 &#39;0.2&#39;]
+ [&#39;4.9&#39; &#39;3.1&#39; 1.5 &#39;0.1&#39;]
+ [&#39;5&#39; &#39;3.2&#39; 1.2 &#39;0.2&#39;]
+ [&#39;5.5&#39; &#39;3.5&#39; 1.3 &#39;0.2&#39;]
+ [&#39;4.9&#39; &#39;3.1&#39; 1.5 &#39;0.1&#39;]
+ [&#39;4.4&#39; &#39;3&#39; 1.3 &#39;0.2&#39;]
+ [&#39;5.1&#39; &#39;3.4&#39; 1.5 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3.5&#39; 1.3 &#39;0.3&#39;]
+ [&#39;4.5&#39; &#39;2.3&#39; 1.3 &#39;0.3&#39;]
+ [&#39;4.4&#39; &#39;3.2&#39; 1.3 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3.5&#39; 1.6 &#39;0.6&#39;]
+ [&#39;5.1&#39; &#39;3.8&#39; 1.9 &#39;0.4&#39;]
+ [&#39;4.8&#39; &#39;3&#39; 1.4 &#39;0.3&#39;]
+ [&#39;5.1&#39; &#39;3.8&#39; 1.6 &#39;0.2&#39;]
+ [&#39;4.6&#39; &#39;3.2&#39; 1.4 &#39;0.2&#39;]
+ [&#39;5.3&#39; &#39;3.7&#39; 1.5 &#39;0.2&#39;]
+ [&#39;5&#39; &#39;3.3&#39; 1.4 &#39;0.2&#39;]
+ [&#39;7&#39; &#39;3.2&#39; 4.7 &#39;1.4&#39;]
+ [&#39;6.4&#39; &#39;3.2&#39; 4.5 &#39;1.5&#39;]
+ [&#39;6.9&#39; &#39;3.1&#39; 4.9 &#39;1.5&#39;]
+ [&#39;5.5&#39; &#39;2.3&#39; 4.0 &#39;1.3&#39;]
+ [&#39;6.5&#39; &#39;2.8&#39; 4.6 &#39;1.5&#39;]
+ [&#39;5.7&#39; &#39;2.8&#39; 4.5 &#39;1.3&#39;]
+ [&#39;6.3&#39; &#39;3.3&#39; 4.7 &#39;1.6&#39;]
+ [&#39;4.9&#39; &#39;2.4&#39; 3.3 &#39;1&#39;]
+ [&#39;6.6&#39; &#39;2.9&#39; 4.6 &#39;1.3&#39;]
+ [&#39;5.2&#39; &#39;2.7&#39; 3.9 &#39;1.4&#39;]
+ [&#39;5&#39; &#39;2&#39; 3.5 &#39;1&#39;]
+ [&#39;5.9&#39; &#39;3&#39; 4.2 &#39;1.5&#39;]
+ [&#39;6&#39; &#39;2.2&#39; 4.0 &#39;1&#39;]
+ [&#39;6.1&#39; &#39;2.9&#39; 4.7 &#39;1.4&#39;]
+ [&#39;5.6&#39; &#39;2.9&#39; 3.6 &#39;1.3&#39;]
+ [&#39;6.7&#39; &#39;3.1&#39; 4.4 &#39;1.4&#39;]
+ [&#39;5.6&#39; &#39;3&#39; 4.5 &#39;1.5&#39;]
+ [&#39;5.8&#39; &#39;2.7&#39; 4.1 &#39;1&#39;]
+ [&#39;6.2&#39; &#39;2.2&#39; 4.5 &#39;1.5&#39;]
+ [&#39;5.6&#39; &#39;2.5&#39; 3.9 &#39;1.1&#39;]
+ [&#39;5.9&#39; &#39;3.2&#39; 4.8 &#39;1.8&#39;]
+ [&#39;6.1&#39; &#39;2.8&#39; 4.0 &#39;1.3&#39;]
+ [&#39;6.3&#39; &#39;2.5&#39; 4.9 &#39;1.5&#39;]
+ [&#39;6.1&#39; &#39;2.8&#39; 4.7 &#39;1.2&#39;]
+ [&#39;6.4&#39; &#39;2.9&#39; 4.3 &#39;1.3&#39;]
+ [&#39;6.6&#39; &#39;3&#39; 4.4 &#39;1.4&#39;]
+ [&#39;6.8&#39; &#39;2.8&#39; 4.8 &#39;1.4&#39;]
+ [&#39;6.7&#39; &#39;3&#39; 5.0 &#39;1.7&#39;]
+ [&#39;6&#39; &#39;2.9&#39; 4.5 &#39;1.5&#39;]
+ [&#39;5.7&#39; &#39;2.6&#39; 3.5 &#39;1&#39;]
+ [&#39;5.5&#39; &#39;2.4&#39; 3.8 &#39;1.1&#39;]
+ [&#39;5.5&#39; &#39;2.4&#39; 3.7 &#39;1&#39;]
+ [&#39;5.8&#39; &#39;2.7&#39; 3.9 &#39;1.2&#39;]
+ [&#39;6&#39; &#39;2.7&#39; 5.1 &#39;1.6&#39;]
+ [&#39;5.4&#39; &#39;3&#39; 4.5 &#39;1.5&#39;]
+ [&#39;6&#39; &#39;3.4&#39; 4.5 &#39;1.6&#39;]
+ [&#39;6.7&#39; &#39;3.1&#39; 4.7 &#39;1.5&#39;]
+ [&#39;6.3&#39; &#39;2.3&#39; 4.4 &#39;1.3&#39;]
+ [&#39;5.6&#39; &#39;3&#39; 4.1 &#39;1.3&#39;]
+ [&#39;5.5&#39; &#39;2.5&#39; 4.0 &#39;1.3&#39;]
+ [&#39;5.5&#39; &#39;2.6&#39; 4.4 &#39;1.2&#39;]
+ [&#39;6.1&#39; &#39;3&#39; 4.6 &#39;1.4&#39;]
+ [&#39;5.8&#39; &#39;2.6&#39; 4.0 &#39;1.2&#39;]
+ [&#39;5&#39; &#39;2.3&#39; 3.3 &#39;1&#39;]
+ [&#39;5.6&#39; &#39;2.7&#39; 4.2 &#39;1.3&#39;]
+ [&#39;5.7&#39; &#39;3&#39; 4.2 &#39;1.2&#39;]
+ [&#39;5.7&#39; &#39;2.9&#39; 4.2 &#39;1.3&#39;]
+ [&#39;6.2&#39; &#39;2.9&#39; 4.3 &#39;1.3&#39;]
+ [&#39;5.1&#39; &#39;2.5&#39; 3.0 &#39;1.1&#39;]
+ [&#39;5.7&#39; &#39;2.8&#39; 4.1 &#39;1.3&#39;]
+ [&#39;6.3&#39; &#39;3.3&#39; 6.0 &#39;2.5&#39;]
+ [&#39;5.8&#39; &#39;2.7&#39; 5.1 &#39;1.9&#39;]
+ [&#39;7.1&#39; &#39;3&#39; 5.9 &#39;2.1&#39;]
+ [&#39;6.3&#39; &#39;2.9&#39; 5.6 &#39;1.8&#39;]
+ [&#39;6.5&#39; &#39;3&#39; 5.8 &#39;2.2&#39;]
+ [&#39;7.6&#39; &#39;3&#39; 6.6 &#39;2.1&#39;]
+ [&#39;4.9&#39; &#39;2.5&#39; 4.5 &#39;1.7&#39;]
+ [&#39;7.3&#39; &#39;2.9&#39; 6.3 &#39;1.8&#39;]
+ [&#39;6.7&#39; &#39;2.5&#39; 5.8 &#39;1.8&#39;]
+ [&#39;7.2&#39; &#39;3.6&#39; 6.1 &#39;2.5&#39;]
+ [&#39;6.5&#39; &#39;3.2&#39; 5.1 &#39;2&#39;]
+ [&#39;6.4&#39; &#39;2.7&#39; 5.3 &#39;1.9&#39;]
+ [&#39;6.8&#39; &#39;3&#39; 5.5 &#39;2.1&#39;]
+ [&#39;5.7&#39; &#39;2.5&#39; 5.0 &#39;2&#39;]
+ [&#39;5.8&#39; &#39;2.8&#39; 5.1 &#39;2.4&#39;]
+ [&#39;6.4&#39; &#39;3.2&#39; 5.3 &#39;2.3&#39;]
+ [&#39;6.5&#39; &#39;3&#39; 5.5 &#39;1.8&#39;]
+ [&#39;7.7&#39; &#39;3.8&#39; 6.7 &#39;2.2&#39;]
+ [&#39;7.7&#39; &#39;2.6&#39; 6.9 &#39;2.3&#39;]
+ [&#39;6&#39; &#39;2.2&#39; 5.0 &#39;1.5&#39;]
+ [&#39;6.9&#39; &#39;3.2&#39; 5.7 &#39;2.3&#39;]
+ [&#39;5.6&#39; &#39;2.8&#39; 4.9 &#39;2&#39;]
+ [&#39;7.7&#39; &#39;2.8&#39; 6.7 &#39;2&#39;]
+ [&#39;6.3&#39; &#39;2.7&#39; 4.9 &#39;1.8&#39;]
+ [&#39;6.7&#39; &#39;3.3&#39; 5.7 &#39;2.1&#39;]
+ [&#39;7.2&#39; &#39;3.2&#39; 6.0 &#39;1.8&#39;]
+ [&#39;6.2&#39; &#39;2.8&#39; 4.8 &#39;1.8&#39;]
+ [&#39;6.1&#39; &#39;3&#39; 4.9 &#39;1.8&#39;]
+ [&#39;6.4&#39; &#39;2.8&#39; 5.6 &#39;2.1&#39;]
+ [&#39;7.2&#39; &#39;3&#39; 5.8 &#39;1.6&#39;]
+ [&#39;7.4&#39; &#39;2.8&#39; 6.1 &#39;1.9&#39;]
+ [&#39;7.9&#39; &#39;3.8&#39; 6.4 &#39;2&#39;]
+ [&#39;6.4&#39; &#39;2.8&#39; 5.6 &#39;2.2&#39;]
+ [&#39;6.3&#39; &#39;2.8&#39; 5.1 &#39;1.5&#39;]
+ [&#39;6.1&#39; &#39;2.6&#39; 5.6 &#39;1.4&#39;]
+ [&#39;7.7&#39; &#39;3&#39; 6.1 &#39;2.3&#39;]
+ [&#39;6.3&#39; &#39;3.4&#39; 5.6 &#39;2.4&#39;]
+ [&#39;6.4&#39; &#39;3.1&#39; 5.5 &#39;1.8&#39;]
+ [&#39;6&#39; &#39;3&#39; 4.8 &#39;1.8&#39;]
+ [&#39;6.9&#39; &#39;3.1&#39; 5.4 &#39;2.1&#39;]
+ [&#39;6.7&#39; &#39;3.1&#39; 5.6 &#39;2.4&#39;]
+ [&#39;6.9&#39; &#39;3.1&#39; 5.1 &#39;2.3&#39;]
+ [&#39;5.8&#39; &#39;2.7&#39; 5.1 &#39;1.9&#39;]
+ [&#39;6.8&#39; &#39;3.2&#39; 5.9 &#39;2.3&#39;]
+ [&#39;6.7&#39; &#39;3.3&#39; 5.7 &#39;2.5&#39;]
+ [&#39;6.7&#39; &#39;3&#39; 5.2 &#39;2.3&#39;]
+ [&#39;6.3&#39; &#39;2.5&#39; 5.0 &#39;1.9&#39;]
+ [&#39;6.5&#39; &#39;3&#39; 5.2 &#39;2&#39;]
+ [&#39;6.2&#39; &#39;3.4&#39; 5.4 &#39;2.3&#39;]
+ [&#39;5.9&#39; &#39;3&#39; 5.1 &#39;1.8&#39;]]
 </pre></div>
 </div>
 </div>
@@ -2315,42 +2329,7 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_5500</span>\<span class="mf">3918670243.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-
-<span class="nn">~\anaconda3\lib\site-packages\sklearn\tree\_classes.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight, check_input, X_idx_sorted)</span>
-<span class="g g-Whitespace">    </span><span class="mi">935</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">936</span><span class="s2"> </span>
-<span class="ne">--&gt; </span><span class="mi">937</span><span class="s2">         super().fit(</span>
-<span class="g g-Whitespace">    </span><span class="mi">938</span><span class="s2">             X,</span>
-<span class="g g-Whitespace">    </span><span class="mi">939</span><span class="s2">             y,</span>
-
-<span class="nn">~\anaconda3\lib\site-packages\sklearn\tree\_classes.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight, check_input, X_idx_sorted)</span>
-<span class="g g-Whitespace">    </span><span class="mi">163</span><span class="s2">             check_X_params = dict(dtype=DTYPE, accept_sparse=&quot;csc&quot;)</span>
-<span class="g g-Whitespace">    </span><span class="mi">164</span><span class="s2">             check_y_params = dict(ensure_2d=False, dtype=None)</span>
-<span class="ne">--&gt; </span><span class="mi">165</span><span class="s2">             X, y = self._validate_data(</span>
-<span class="g g-Whitespace">    </span><span class="mi">166</span><span class="s2">                 X, y, validate_separately=(check_X_params, check_y_params)</span>
-<span class="g g-Whitespace">    </span><span class="mi">167</span><span class="s2">             )</span>
-
-<span class="nn">~\anaconda3\lib\site-packages\sklearn\base.py</span> in <span class="ni">_validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
-<span class="g g-Whitespace">    </span><span class="mi">576</span><span class="s2">                 # :(</span>
-<span class="g g-Whitespace">    </span><span class="mi">577</span><span class="s2">                 check_X_params, check_y_params = validate_separately</span>
-<span class="ne">--&gt; </span><span class="mi">578</span><span class="s2">                 X = check_array(X, **check_X_params)</span>
-<span class="g g-Whitespace">    </span><span class="mi">579</span><span class="s2">                 y = check_array(y, **check_y_params)</span>
-<span class="g g-Whitespace">    </span><span class="mi">580</span><span class="s2">             else:</span>
-
-<span class="nn">~\anaconda3\lib\site-packages\sklearn\utils\validation.py</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator)</span>
-<span class="g g-Whitespace">    </span><span class="mi">744</span><span class="s2">                     array = array.astype(dtype, casting=&quot;unsafe&quot;, copy=False)</span>
-<span class="g g-Whitespace">    </span><span class="mi">745</span><span class="s2">                 else:</span>
-<span class="ne">--&gt; </span><span class="mi">746</span><span class="s2">                     array = np.asarray(array, order=order, dtype=dtype)</span>
-<span class="g g-Whitespace">    </span><span class="mi">747</span><span class="s2">             except ComplexWarning as complex_warning:</span>
-<span class="g g-Whitespace">    </span><span class="mi">748</span><span class="s2">                 raise ValueError(</span>
-
-<span class="ne">ValueError</span>: could not convert string to float: &#39;2,8&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DecisionTreeClassifier()
 </pre></div>
 </div>
 </div>
@@ -2370,12 +2349,22 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> DecisionTree Accuracy :  96.66666666666667
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="n">classifier</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>KNeighborsClassifier()
 </pre></div>
 </div>
 </div>
@@ -2386,11 +2375,247 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\USER\anaconda3\lib\site-packages\sklearn\neighbors\_classification.py:228: FutureWarning: Unlike other reduction functions (e.g. `skew`, `kurtosis`), the default behavior of `mode` typically preserves the axis it acts along. In SciPy 1.11.0, this behavior will change: the default value of `keepdims` will become False, the `axis` over which the statistic is taken will be eliminated, and the value None will no longer be accepted. Set `keepdims` to True or False to avoid this warning.
+  mode, _ = stats.mode(_y[neigh_ind, k], axis=1)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot; KNN Accuracy : &quot;</span><span class="p">,</span>
     <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> KNN Accuracy :  100.0
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="tugas-5">
+<h1>Tugas 5<a class="headerlink" href="#tugas-5" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># linear algebra</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1"># data processing, CSV file I/O (e.g. pd.read_csv)</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">os</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/RBellaApriliaDamayanti22/Datasets/main/Iris.csv&quot;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;Id&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris_data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-300c1321-96fa-412a-8d29-3a347a7cf43f">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SepalLengthCm</th>
+      <th>SepalWidthCm</th>
+      <th>PetalLengthCm</th>
+      <th>PetalWidthCm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>150.000000</td>
+      <td>150.000000</td>
+      <td>150.000000</td>
+      <td>150.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>5.843333</td>
+      <td>3.054000</td>
+      <td>3.758667</td>
+      <td>1.198667</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.828066</td>
+      <td>0.433594</td>
+      <td>1.764420</td>
+      <td>0.763161</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>4.300000</td>
+      <td>2.000000</td>
+      <td>1.000000</td>
+      <td>0.100000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>5.100000</td>
+      <td>2.800000</td>
+      <td>1.600000</td>
+      <td>0.300000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>5.800000</td>
+      <td>3.000000</td>
+      <td>4.350000</td>
+      <td>1.300000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>6.400000</td>
+      <td>3.300000</td>
+      <td>5.100000</td>
+      <td>1.800000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>7.900000</td>
+      <td>4.400000</td>
+      <td>6.900000</td>
+      <td>2.500000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-300c1321-96fa-412a-8d29-3a347a7cf43f')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-300c1321-96fa-412a-8d29-3a347a7cf43f button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-300c1321-96fa-412a-8d29-3a347a7cf43f');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  </div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Label encoding since the algorithms we are going to use do not take non numerical or boolean data as inputs</span>
+<span class="n">iris_data</span><span class="o">.</span><span class="n">Species</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">&#39;Iris-setosa&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Iris-versicolor&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Iris-virginica&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -2467,6 +2692,7 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-5">Tugas 5</a></li>
 </ul>
 
   </nav></div>
