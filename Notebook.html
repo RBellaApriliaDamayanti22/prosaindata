@@ -160,14 +160,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-
-
-
-
-
-
-
-
 </ul>
 
     </div>
@@ -378,15 +370,17 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.Export To CSV</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-sql-server">Mengambil data dari database SQL Server</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgresql-elephant">Mengambil data dari database postgreSQL elephant</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgres-local">Mengambil data dari database Postgres Local</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-localhost">Mengambil data dari database localhost</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggabungkan-empat-sumber-data">Menggabungkan Empat Sumber data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-kolom-id">Menghapus Kolom ID</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#model-pca">Model PCA</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-training-dan-data-test">Membagi Data Training dan Data Test</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-sql-server">Mengambil data dari database SQL Server</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgresql-elephant">Mengambil data dari database postgreSQL elephant</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgres-local">Mengambil data dari database Postgres Local</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-localhost">Mengambil data dari database localhost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggabungkan-empat-sumber-data">Menggabungkan Empat Sumber data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-kolom-id">Menghapus Kolom ID</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-pca">Model PCA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-training-dan-data-test">Membagi Data Training dan Data Test</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-5">Tugas 5</a></li>
 </ul>
 
@@ -413,14 +407,14 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: snscrape in /usr/local/lib/python3.9/dist-packages (0.6.1.20230314)
+Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.9.0)
 Requirement already satisfied: requests[socks] in /usr/local/lib/python3.9/dist-packages (from snscrape) (2.25.1)
 Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.9.3)
-Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.9.0)
 Requirement already satisfied: lxml in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.9.2)
 Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.9/dist-packages (from beautifulsoup4-&gt;snscrape) (2.4)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.26.15)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
 Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2.10)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
 Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (4.0.0)
 Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.7.1)
 </pre></div>
@@ -458,8 +452,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "4986e7d1684a45c08bd3462a79dc8c6c"}</script><div class="output text_html">
-  <div id="df-db65a6ec-9151-4e24-acfa-b1988782f07f">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "9a0cc70a915b4f5a8b61c1de17e848d4"}</script><div class="output text_html">
+  <div id="df-66b4533d-82ff-4add-8bba-36fc102846df">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -487,33 +481,33 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
   <tbody>
     <tr>
       <th>0</th>
-      <td>marutocakra</td>
-      <td>@GarrdTutu @hammersonicfest @sandiuno @Kemenpa...</td>
+      <td>Praseti01999</td>
+      <td>@AirinDatangLagi @sandiuno Loe gaptek apa eman...</td>
       <td></td>
     </tr>
     <tr>
       <th>1</th>
-      <td>KepaArgawinata2</td>
-      <td>Momen ketika Prabowo, Sandiuno dan Amien Rais ...</td>
-      <td>Petamburan</td>
+      <td>25Kesatria</td>
+      <td>YANG BICARA SUDAH BERSEDEKAH BERAPA ?!.\nsstt....</td>
+      <td></td>
     </tr>
     <tr>
       <th>2</th>
-      <td>AdeAnas10</td>
-      <td>@openmindzero0 @ch_chotimah2 @aniesbaswedan @s...</td>
+      <td>RomansyahYungki</td>
+      <td>@sandiuno 🌟</td>
       <td></td>
     </tr>
     <tr>
       <th>3</th>
-      <td>BudhiPrabowo7</td>
-      <td>@ch_chotimah2 @aniesbaswedan @sandiuno Anies/S...</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>4</th>
       <td>KepaArgawinata2</td>
       <td>Momen ketika Prabowo, Sandiuno dan Amien Rais ...</td>
       <td>Petamburan</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>marutocakra</td>
+      <td>@GarrdTutu @hammersonicfest @sandiuno @Kemenpa...</td>
+      <td></td>
     </tr>
     <tr>
       <th>...</th>
@@ -523,39 +517,39 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
     </tr>
     <tr>
       <th>497</th>
-      <td>Ardisaz</td>
-      <td>@Bisher_d790 @sandiuno @Kemenparekraf @asosias...</td>
-      <td>Indonesia</td>
+      <td>GaKorindo</td>
+      <td>@sandiuno buruh wna china ya.....\n@RamliRizal</td>
+      <td></td>
     </tr>
     <tr>
       <th>498</th>
-      <td>Bisher_d790</td>
-      <td>@Ardisaz @sandiuno @Kemenparekraf @asosiasigam...</td>
-      <td>Región de Yakarta, Indonesia</td>
+      <td>canthingku</td>
+      <td>@sandiuno Nunggu viral baru dikerjain...payah nih</td>
+      <td>Denpasar Selatan, Indonesia</td>
     </tr>
     <tr>
       <th>499</th>
-      <td>linda_adami_xyz</td>
-      <td>About to go live on @sandiuno Weekly Media Pre...</td>
+      <td>novita_hardini</td>
+      <td>@sandiuno @mna_______ Mantap Pak Menteri</td>
       <td></td>
     </tr>
     <tr>
       <th>500</th>
-      <td>rajbatam</td>
-      <td>@IdeBagus_store @sandiuno True. All over the w...</td>
-      <td>Singapore</td>
+      <td>pinterpolitik</td>
+      <td>Menanggapi berbagai persoalan ini, pejabat-pej...</td>
+      <td>Jakarta, Indonesia</td>
     </tr>
     <tr>
       <th>501</th>
-      <td>DragonClaw93</td>
-      <td>Dari samping kaya @sandiuno 😂</td>
-      <td>XANDAR</td>
+      <td>Ardisaz</td>
+      <td>@Bisher_d790 @sandiuno @Kemenparekraf @asosias...</td>
+      <td>Indonesia</td>
     </tr>
   </tbody>
 </table>
 <p>502 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-db65a6ec-9151-4e24-acfa-b1988782f07f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-66b4533d-82ff-4add-8bba-36fc102846df')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -606,12 +600,12 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 
       <script>
         const buttonEl =
-          document.querySelector('#df-db65a6ec-9151-4e24-acfa-b1988782f07f button.colab-df-convert');
+          document.querySelector('#df-66b4533d-82ff-4add-8bba-36fc102846df button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-db65a6ec-9151-4e24-acfa-b1988782f07f');
+          const element = document.querySelector('#df-66b4533d-82ff-4add-8bba-36fc102846df');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1506,9 +1500,8 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 <h1>TUGAS 4 (Pipelines)<a class="headerlink" href="#tugas-4-pipelines" title="Permalink to this heading">#</a></h1>
 <p>Pertama tama saya memisahkan kolom Petal Length, Petal Width, Sepal Length, dan Sepal Width + class dan ditambah masing-masing kolom id di csv. kemudian saya mengkonversi csv to sql menjadi script sql. setelah masing-masing kolom telah di ubah ke script sql, selanjutnya saya memasukkan data tersebut ke masing” aplikasi database yaitu mysql, sql server, dan postgres sql local + elephant. Pertama, kolom sepal length saya masukkan ke database postgressql local, kemudian kolom sepal width saya masukkkan ke database postgressql elephantsql, kolom petal length dimasukkan ke database mysql local, dan terakhir kolom petalwidth +class dimasukkan ke database sql server, semua dimasukkkan sesuai dengan tahapan masing” database tersebut dengan menggunakan script sql yang sudah dikonversi dari csv. kemudian setelah berhasil memasukkan ke semua database lanjut menjadikan 1 kolom-kolom tersebut. disini saya mencoba menggunakan orchest namun tidak bisa untuk yang local (hanya bisa postgrest elephantsql saja) sehingga saya mencoba menggabungkan data-data dari tiap database tersebut dengan menggunakan google colab.</p>
 <p><a class="reference external" href="http://localhost:8888/?token=ea4f8fda93fa3a5e19da8685b1711e55e4d4db20098d712e">http://localhost:8888/?token=ea4f8fda93fa3a5e19da8685b1711e55e4d4db20098d712e</a></p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="mengambil-data-dari-database-sql-server">
-<h1>Mengambil data dari database SQL Server<a class="headerlink" href="#mengambil-data-dari-database-sql-server" title="Permalink to this heading">#</a></h1>
+<div class="section" id="mengambil-data-dari-database-sql-server">
+<h2>Mengambil data dari database SQL Server<a class="headerlink" href="#mengambil-data-dari-database-sql-server" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyodbc</span> 
@@ -1639,8 +1632,8 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="mengambil-data-dari-database-postgresql-elephant">
-<h1>Mengambil data dari database postgreSQL elephant<a class="headerlink" href="#mengambil-data-dari-database-postgresql-elephant" title="Permalink to this heading">#</a></h1>
+<div class="section" id="mengambil-data-dari-database-postgresql-elephant">
+<h2>Mengambil data dari database postgreSQL elephant<a class="headerlink" href="#mengambil-data-dari-database-postgresql-elephant" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
@@ -1689,8 +1682,8 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="mengambil-data-dari-database-postgres-local">
-<h1>Mengambil data dari database Postgres Local<a class="headerlink" href="#mengambil-data-dari-database-postgres-local" title="Permalink to this heading">#</a></h1>
+<div class="section" id="mengambil-data-dari-database-postgres-local">
+<h2>Mengambil data dari database Postgres Local<a class="headerlink" href="#mengambil-data-dari-database-postgres-local" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
@@ -1756,8 +1749,8 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="mengambil-data-dari-database-localhost">
-<h1>Mengambil data dari database localhost<a class="headerlink" href="#mengambil-data-dari-database-localhost" title="Permalink to this heading">#</a></h1>
+<div class="section" id="mengambil-data-dari-database-localhost">
+<h2>Mengambil data dari database localhost<a class="headerlink" href="#mengambil-data-dari-database-localhost" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mysql.connector</span>
@@ -1867,8 +1860,8 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </div></div></div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="menggabungkan-empat-sumber-data">
-<h1>Menggabungkan Empat Sumber data<a class="headerlink" href="#menggabungkan-empat-sumber-data" title="Permalink to this heading">#</a></h1>
+<div class="section" id="menggabungkan-empat-sumber-data">
+<h2>Menggabungkan Empat Sumber data<a class="headerlink" href="#menggabungkan-empat-sumber-data" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># merge df</span>
@@ -2047,8 +2040,8 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </div></div></div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="menghapus-kolom-id">
-<h1>Menghapus Kolom ID<a class="headerlink" href="#menghapus-kolom-id" title="Permalink to this heading">#</a></h1>
+<div class="section" id="menghapus-kolom-id">
+<h2>Menghapus Kolom ID<a class="headerlink" href="#menghapus-kolom-id" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -2364,8 +2357,8 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="model-pca">
-<h1>Model PCA<a class="headerlink" href="#model-pca" title="Permalink to this heading">#</a></h1>
+<div class="section" id="model-pca">
+<h2>Model PCA<a class="headerlink" href="#model-pca" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -2419,8 +2412,8 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="membagi-data-training-dan-data-test">
-<h1>Membagi Data Training dan Data Test<a class="headerlink" href="#membagi-data-training-dan-data-test" title="Permalink to this heading">#</a></h1>
+<div class="section" id="membagi-data-training-dan-data-test">
+<h2>Membagi Data Training dan Data Test<a class="headerlink" href="#membagi-data-training-dan-data-test" title="Permalink to this heading">#</a></h2>
 <p>data traning sebesar 80% data test sebesar 20%</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2503,6 +2496,7 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> KNN Accuracy :  100.0
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -2802,15 +2796,17 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.Export To CSV</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-sql-server">Mengambil data dari database SQL Server</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgresql-elephant">Mengambil data dari database postgreSQL elephant</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgres-local">Mengambil data dari database Postgres Local</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-localhost">Mengambil data dari database localhost</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggabungkan-empat-sumber-data">Menggabungkan Empat Sumber data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-kolom-id">Menghapus Kolom ID</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#model-pca">Model PCA</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-training-dan-data-test">Membagi Data Training dan Data Test</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-sql-server">Mengambil data dari database SQL Server</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgresql-elephant">Mengambil data dari database postgreSQL elephant</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgres-local">Mengambil data dari database Postgres Local</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-localhost">Mengambil data dari database localhost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggabungkan-empat-sumber-data">Menggabungkan Empat Sumber data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-kolom-id">Menghapus Kolom ID</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-pca">Model PCA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-training-dan-data-test">Membagi Data Training dan Data Test</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-5">Tugas 5</a></li>
 </ul>
 
