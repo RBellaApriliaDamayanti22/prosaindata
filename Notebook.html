@@ -160,6 +160,14 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
+
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -371,6 +379,14 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-sql-server">Mengambil data dari database SQL Server</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgresql-elephant">Mengambil data dari database postgreSQL elephant</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgres-local">Mengambil data dari database Postgres Local</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-localhost">Mengambil data dari database localhost</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggabungkan-empat-sumber-data">Menggabungkan Empat Sumber data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-kolom-id">Menghapus Kolom ID</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#model-pca">Model PCA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-training-dan-data-test">Membagi Data Training dan Data Test</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-5">Tugas 5</a></li>
 </ul>
 
@@ -397,22 +413,27 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Collecting snscrape
-  Downloading snscrape-0.6.0.20230303-py3-none-any.whl (71 kB)
+  Downloading snscrape-0.6.1.20230314-py3-none-any.whl (71 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/71.6 KB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">71.6/71.6 KB</span> <span class=" -Color -Color-Red">3.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hRequirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.6.3)
-Requirement already satisfied: requests[socks] in /usr/local/lib/python3.9/dist-packages (from snscrape) (2.25.1)
-Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.9.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">71.6/71.6 KB</span> <span class=" -Color -Color-Red">3.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hRequirement already satisfied: requests[socks] in /usr/local/lib/python3.9/dist-packages (from snscrape) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.9.3)
 Requirement already satisfied: lxml in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.9.2)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2.10)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.26.14)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
+Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.9.0)
+Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.9/dist-packages (from beautifulsoup4-&gt;snscrape) (2.4)
 Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (4.0.0)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
+Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2.10)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.26.15)
 Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.7.1)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: snscrape
-Successfully installed snscrape-0.6.0.20230303
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed snscrape-0.6.1.20230314
 </pre></div>
 </div>
 </div>
@@ -448,8 +469,8 @@ Successfully installed snscrape-0.6.0.20230303
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "a8ddea5db90c4732b9df483b4d3b8de7"}</script><div class="output text_html">
-  <div id="df-e479e812-0034-420b-ad7d-ef1ee7b375a3">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "49c6287eb1524155ba7f2152f5f35ffe"}</script><div class="output text_html">
+  <div id="df-25825e1d-9300-4126-ab29-f8e3a06af1ef">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -477,33 +498,33 @@ Successfully installed snscrape-0.6.0.20230303
   <tbody>
     <tr>
       <th>0</th>
-      <td>DarmawanZuhri</td>
-      <td>@never_alonely @KemenkeuRI , @DitjenPajakRI , ...</td>
-      <td>Indonesia</td>
+      <td>BudhiPrabowo7</td>
+      <td>@ch_chotimah2 @aniesbaswedan @sandiuno Anies/S...</td>
+      <td></td>
     </tr>
     <tr>
       <th>1</th>
-      <td>DarmawanZuhri</td>
-      <td>@bozzvanc1 @KemenkeuRI , @DitjenPajakRI , @KPK...</td>
-      <td>Indonesia</td>
+      <td>KepaArgawinata2</td>
+      <td>Momen ketika Prabowo, Sandiuno dan Amien Rais ...</td>
+      <td>Petamburan</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>tribunpontianak</td>
-      <td>Desa Wisata Temajuk di Sambas Kalimantan Barat...</td>
-      <td>Jl Sungai Raya Dalam Kubu Raya</td>
+      <td>narkosun</td>
+      <td>Detik² Sugik ceramah di depan pak Prabowo, San...</td>
+      <td>Indonesia</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>TmApaLambakAceh</td>
-      <td>@sandiuno Saya juga sedih waktu pak Sandiaga U...</td>
+      <td>sandiuno</td>
+      <td>Melakukan pertemuan dengan Duta Besar Palestin...</td>
       <td></td>
     </tr>
     <tr>
       <th>4</th>
-      <td>tribunpontianak</td>
-      <td>3 Kampung Wisata di Kota Pontianak Kalimantan ...</td>
-      <td>Jl Sungai Raya Dalam Kubu Raya</td>
+      <td>KepaArgawinata2</td>
+      <td>@Dennysiregar7 Momen ketika Prabowo, Sandiuno ...</td>
+      <td>Petamburan</td>
     </tr>
     <tr>
       <th>...</th>
@@ -513,39 +534,39 @@ Successfully installed snscrape-0.6.0.20230303
     </tr>
     <tr>
       <th>497</th>
-      <td>Islamyyyyyyy</td>
-      <td>@Anggaraafif_ @PorosHalangID @sandiuno Beberap...</td>
-      <td>east java</td>
+      <td>rajbatam</td>
+      <td>@IdeBagus_store @sandiuno True. All over the w...</td>
+      <td>Singapore</td>
     </tr>
     <tr>
       <th>498</th>
-      <td>ayziayes</td>
-      <td>@PorosHalangID @sandiuno Santaiii minnnnn, kak...</td>
-      <td>Karawang</td>
+      <td>DragonClaw93</td>
+      <td>Dari samping kaya @sandiuno 😂</td>
+      <td>XANDAR</td>
     </tr>
     <tr>
       <th>499</th>
-      <td>radenchandra</td>
-      <td>@Catatan_ali7 @PorosHalangID @sandiuno Terima ...</td>
-      <td>Depok</td>
+      <td>HaidirKtb</td>
+      <td>@sandiuno @Dr_Moeldoko Alfatihah buat 6 suhada...</td>
+      <td>Lampung, Indonesia</td>
     </tr>
     <tr>
       <th>500</th>
-      <td>listyan_Aji</td>
-      <td>@PorosHalangID @sandiuno Asli ini mah adminya ...</td>
-      <td>Manchester, England</td>
+      <td>bungdree</td>
+      <td>Laaaahh kebijakan apa kaya gini??? @sandiuno h...</td>
+      <td></td>
     </tr>
     <tr>
       <th>501</th>
-      <td>singopatran</td>
-      <td>@PorosHalangID @sandiuno ngeliat ini bukan nya...</td>
-      <td></td>
+      <td>0xHarunMasiku69</td>
+      <td>@croco_token @natealexnft @sandiuno @ridwankamil</td>
+      <td>Wakanda</td>
     </tr>
   </tbody>
 </table>
 <p>502 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e479e812-0034-420b-ad7d-ef1ee7b375a3')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-25825e1d-9300-4126-ab29-f8e3a06af1ef')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -596,12 +617,12 @@ Successfully installed snscrape-0.6.0.20230303
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e479e812-0034-420b-ad7d-ef1ee7b375a3 button.colab-df-convert');
+          document.querySelector('#df-25825e1d-9300-4126-ab29-f8e3a06af1ef button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e479e812-0034-420b-ad7d-ef1ee7b375a3');
+          const element = document.querySelector('#df-25825e1d-9300-4126-ab29-f8e3a06af1ef');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -771,11 +792,11 @@ Successfully installed snscrape-0.6.0.20230303
 <span class="g g-Whitespace">    </span><span class="mi">143</span>                 <span class="k">try</span><span class="p">:</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/connection.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">412</span>             <span class="n">context</span><span class="o">.</span><span class="n">load_default_certs</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">413</span> 
-<span class="ne">--&gt; </span><span class="mi">414</span>         <span class="bp">self</span><span class="o">.</span><span class="n">sock</span> <span class="o">=</span> <span class="n">ssl_wrap_socket</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">415</span>             <span class="n">sock</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">416</span>             <span class="n">keyfile</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">key_file</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">417</span>             <span class="n">context</span><span class="o">.</span><span class="n">load_default_certs</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">418</span> 
+<span class="ne">--&gt; </span><span class="mi">419</span>         <span class="bp">self</span><span class="o">.</span><span class="n">sock</span> <span class="o">=</span> <span class="n">ssl_wrap_socket</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">420</span>             <span class="n">sock</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">421</span>             <span class="n">keyfile</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">key_file</span><span class="p">,</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/util/ssl_.py</span> in <span class="ni">ssl_wrap_socket</span><span class="nt">(sock, keyfile, certfile, cert_reqs, ca_certs, server_hostname, ssl_version, ciphers, ssl_context, ca_cert_dir, key_password, ca_cert_data, tls_in_tls)</span>
 <span class="g g-Whitespace">    </span><span class="mi">447</span> 
@@ -1495,7 +1516,10 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 <div class="tex2jax_ignore mathjax_ignore section" id="tugas-4-pipelines">
 <h1>TUGAS 4 (Pipelines)<a class="headerlink" href="#tugas-4-pipelines" title="Permalink to this heading">#</a></h1>
 <p>Pertama tama saya memisahkan kolom Petal Length, Petal Width, Sepal Length, dan Sepal Width + class dan ditambah masing-masing kolom id di csv. kemudian saya mengkonversi csv to sql menjadi script sql. setelah masing-masing kolom telah di ubah ke script sql, selanjutnya saya memasukkan data tersebut ke masing” aplikasi database yaitu mysql, sql server, dan postgres sql local + elephant. Pertama, kolom sepal length saya masukkan ke database postgressql local, kemudian kolom sepal width saya masukkkan ke database postgressql elephantsql, kolom petal length dimasukkan ke database mysql local, dan terakhir kolom petalwidth +class dimasukkan ke database sql server, semua dimasukkkan sesuai dengan tahapan masing” database tersebut dengan menggunakan script sql yang sudah dikonversi dari csv. kemudian setelah berhasil memasukkan ke semua database lanjut menjadikan 1 kolom-kolom tersebut. disini saya mencoba menggunakan orchest namun tidak bisa untuk yang local (hanya bisa postgrest elephantsql saja) sehingga saya mencoba menggabungkan data-data dari tiap database tersebut dengan menggunakan google colab.</p>
-<p><a class="reference external" href="http://localhost:8888/?token=588da944fa3883b6e0271d2632bd3da327609e4cdea2d73d">http://localhost:8888/?token=588da944fa3883b6e0271d2632bd3da327609e4cdea2d73d</a></p>
+<p><a class="reference external" href="http://localhost:8888/?token=ea4f8fda93fa3a5e19da8685b1711e55e4d4db20098d712e">http://localhost:8888/?token=ea4f8fda93fa3a5e19da8685b1711e55e4d4db20098d712e</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="mengambil-data-dari-database-sql-server">
+<h1>Mengambil data dari database SQL Server<a class="headerlink" href="#mengambil-data-dari-database-sql-server" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyodbc</span> 
@@ -1625,6 +1649,9 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 </div>
 </div>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="mengambil-data-dari-database-postgresql-elephant">
+<h1>Mengambil data dari database postgreSQL elephant<a class="headerlink" href="#mengambil-data-dari-database-postgresql-elephant" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
@@ -1672,6 +1699,9 @@ Requirement already satisfied: BeautifulSoup4 in /usr/local/lib/python3.8/dist-p
 </div>
 </div>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="mengambil-data-dari-database-postgres-local">
+<h1>Mengambil data dari database Postgres Local<a class="headerlink" href="#mengambil-data-dari-database-postgres-local" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
@@ -1736,6 +1766,9 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </div>
 </div>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="mengambil-data-dari-database-localhost">
+<h1>Mengambil data dari database localhost<a class="headerlink" href="#mengambil-data-dari-database-localhost" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mysql.connector</span>
@@ -1844,6 +1877,9 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 <p>150 rows × 2 columns</p>
 </div></div></div>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="menggabungkan-empat-sumber-data">
+<h1>Menggabungkan Empat Sumber data<a class="headerlink" href="#menggabungkan-empat-sumber-data" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># merge df</span>
@@ -2021,6 +2057,9 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 <p>150 rows × 9 columns</p>
 </div></div></div>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="menghapus-kolom-id">
+<h1>Menghapus Kolom ID<a class="headerlink" href="#menghapus-kolom-id" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -2311,6 +2350,89 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(150, 4)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Y</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(150,)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="model-pca">
+<h1>Model PCA<a class="headerlink" href="#model-pca" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PCA(n_components=2)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pca</span><span class="o">.</span><span class="n">components_</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 0.36158968, -0.08226889,  0.85657211,  0.35884393],
+       [ 0.65653988,  0.72971237, -0.1757674 , -0.07470647]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Z</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Z</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(150, 2)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="membagi-data-training-dan-data-test">
+<h1>Membagi Data Training dan Data Test<a class="headerlink" href="#membagi-data-training-dan-data-test" title="Permalink to this heading">#</a></h1>
+<p>data traning sebesar 80% data test sebesar 20%</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -2692,6 +2814,14 @@ Requirement already satisfied: pymysql in c:\users\user\anaconda3\lib\site-packa
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-4-pipelines">TUGAS 4 (Pipelines)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-sql-server">Mengambil data dari database SQL Server</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgresql-elephant">Mengambil data dari database postgreSQL elephant</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-postgres-local">Mengambil data dari database Postgres Local</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-database-localhost">Mengambil data dari database localhost</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggabungkan-empat-sumber-data">Menggabungkan Empat Sumber data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-kolom-id">Menghapus Kolom ID</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#model-pca">Model PCA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-training-dan-data-test">Membagi Data Training dan Data Test</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-5">Tugas 5</a></li>
 </ul>
 
