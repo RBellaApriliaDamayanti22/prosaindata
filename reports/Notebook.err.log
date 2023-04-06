@@ -32,8 +32,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-['scraper=sntwitter.TwitterSearchScraper("sandiuno")', 'tweets=[]', 'n_tweets=500', 'for i, tweet in tqdm(enumerate(scraper.get_items()), total=n_tweets):', '    data=[']
+['#Inisialisasi Link URL', "url = 'https://pta.trunojoyo.ac.id/c_search/byprod/10/'", '', 'headers={', "    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'"]
 ...
-['    tweets.append(data)', '    if i > n_tweets:', '        break', "tweet_df=pd.DataFrame(tweets, columns=['@Username','Tweet', 'Lokasi'])", 'tweet_df']
+['judul = pd.DataFrame(listJudul,columns=["Judul"])', 'penulis = pd.DataFrame(listPenulis,columns=["Penulis"])', 'abstrak = pd.DataFrame(listAbstrak,columns=["Abstrak"])', 'data = pd.concat([penulis,judul, abstrak], axis=1) ', 'data']
 -------------------
 
