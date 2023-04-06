@@ -412,17 +412,13 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-5">Tugas 5</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-6-time-series">TUGAS 6 (TIME SERIES)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uts">UTS</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-7">TUGAS 7</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">Preprocessing Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-punctuation-removal-case-folding">1. Symbol &amp; Punctuation Removal, case folding</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#word-normalization">2. Word Normalization</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing">3. Tokenizing</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stopwords-removal">4. Stopwords Removal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">5. Stemming</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#word-embedding-word2vec-cbow">Word Embedding Word2vec CBOW</a></li>
 </ul>
 </li>
 </ul>
@@ -450,29 +446,17 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Collecting snscrape
-  Downloading snscrape-0.6.2.20230320-py3-none-any.whl (71 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/71.8 KB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">71.8/71.8 KB</span> <span class=" -Color -Color-Red">2.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25h
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.10.7)
+Requirement already satisfied: snscrape in /usr/local/lib/python3.9/dist-packages (0.6.2.20230320)
+Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.10.7)
 Requirement already satisfied: requests[socks] in /usr/local/lib/python3.9/dist-packages (from snscrape) (2.27.1)
 Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.11.2)
 Requirement already satisfied: lxml in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.9.2)
 Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.9/dist-packages (from beautifulsoup4-&gt;snscrape) (2.4)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
-Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2.0.12)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.26.15)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (3.4)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.26.15)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2.0.12)
 Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.7.1)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: snscrape
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed snscrape-0.6.2.20230320
 </pre></div>
 </div>
 </div>
@@ -508,8 +492,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "c8a2b494509d40e9aa9962ea17fb886e"}</script><div class="output text_html">
-  <div id="df-c3d4ccb7-15ef-408e-8aa5-afb3d005f95b">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "ea595c25e4254a94be20622fd2028f3e"}</script><div class="output text_html">
+  <div id="df-d1fdb466-26df-4d4f-b06e-43d966debd58">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -537,32 +521,32 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
   <tbody>
     <tr>
       <th>0</th>
+      <td>mhmmdrezza310</td>
+      <td>@DPP_PPP @sandiuno mantaPPP🙌💚</td>
+      <td>Ampana Kota, Indonesia</td>
+    </tr>
+    <tr>
+      <th>1</th>
       <td>dedi43782070</td>
       <td>@FauzanMusthofa @sandiuno Siap akhi 🙏🏻</td>
       <td></td>
     </tr>
     <tr>
-      <th>1</th>
+      <th>2</th>
       <td>KawanBaikKomodo</td>
       <td>Kita tunggu reapons Pak Menteri @sandiuno @Kem...</td>
       <td>Taman Nasional Komodo</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>3</th>
       <td>BijakBerkata4</td>
       <td>@sandiuno Wisata ke Yogya denganku Yuk, Kota n...</td>
       <td>Kabupaten italy</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>4</th>
       <td>Yumarsyka</td>
       <td>Akhirnya di sela liputan, bisa juga foto baren...</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Jafar_julian</td>
-      <td>@sandiuno Pa labuan bajo banjir, denger denger...</td>
       <td></td>
     </tr>
     <tr>
@@ -573,39 +557,39 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
     </tr>
     <tr>
       <th>497</th>
-      <td>fahrudin_an</td>
-      <td>@sandiuno Sy sedih dg lunturnya para penerus b...</td>
-      <td>Quantum English Course</td>
-    </tr>
-    <tr>
-      <th>498</th>
       <td>JokoYuke</td>
       <td>@sandiuno * SMOGA...ALLOH Mengkabulken PUASA N...</td>
       <td></td>
     </tr>
     <tr>
-      <th>499</th>
+      <th>498</th>
       <td>Avocado2Juice</td>
       <td>Akhirnya erick thohir jadi korban ambisi. Mace...</td>
       <td></td>
     </tr>
     <tr>
-      <th>500</th>
+      <th>499</th>
       <td>kibring</td>
       <td>@sandiuno Baru rencana doang Pak uno untuk pul...</td>
       <td>Balikpapan, Kal-Tim, Indonesia</td>
     </tr>
     <tr>
-      <th>501</th>
+      <th>500</th>
       <td>fahrudin_an</td>
       <td>@tvOneNews @sandiuno Angka yg kecil... 349T yg...</td>
       <td>Quantum English Course</td>
+    </tr>
+    <tr>
+      <th>501</th>
+      <td>azhar_can</td>
+      <td>@tvOneNews Lapor @KPK_RI @sandiuno  siapa tau ...</td>
+      <td>Gunungsitoli</td>
     </tr>
   </tbody>
 </table>
 <p>502 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c3d4ccb7-15ef-408e-8aa5-afb3d005f95b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d1fdb466-26df-4d4f-b06e-43d966debd58')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -656,12 +640,12 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c3d4ccb7-15ef-408e-8aa5-afb3d005f95b button.colab-df-convert');
+          document.querySelector('#df-d1fdb466-26df-4d4f-b06e-43d966debd58 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c3d4ccb7-15ef-408e-8aa5-afb3d005f95b');
+          const element = document.querySelector('#df-d1fdb466-26df-4d4f-b06e-43d966debd58');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1592,8 +1576,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 </div>
-<div class="section" id="uts">
-<h2>UTS<a class="headerlink" href="#uts" title="Permalink to this heading">#</a></h2>
+<div class="section" id="tugas-7">
+<h2>TUGAS 7<a class="headerlink" href="#tugas-7" title="Permalink to this heading">#</a></h2>
 <div class="section" id="load-data">
 <h3>Load Data<a class="headerlink" href="#load-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
@@ -1755,176 +1739,6 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Normalisasi kata tidak baku</span>
-<span class="n">normalize</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;tugas/dataset/Normalization Data.xlsx&quot;</span><span class="p">)</span>
-
-<span class="n">normalize_word_dict</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">normalize</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-  <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">normalize_word_dict</span><span class="p">:</span>
-    <span class="n">normalize_word_dict</span><span class="p">[</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="k">def</span> <span class="nf">normalized_term</span><span class="p">(</span><span class="n">comment</span><span class="p">):</span>
-  <span class="k">return</span> <span class="p">[</span><span class="n">normalize_word_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="k">if</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">normalize_word_dict</span> <span class="k">else</span> <span class="n">term</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">comment</span><span class="p">]</span>
-
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;comment_normalize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;review_token&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">normalized_term</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;comment_normalize&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="tokenizing">
-<h4>3. Tokenizing<a class="headerlink" href="#tokenizing" title="Permalink to this heading">#</a></h4>
-</div>
-<div class="section" id="stopwords-removal">
-<h4>4. Stopwords Removal<a class="headerlink" href="#stopwords-removal" title="Permalink to this heading">#</a></h4>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Stopword Removal</span>
-<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
-<span class="n">txt_stopwords</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">stopwords_removal</span><span class="p">(</span><span class="n">filtering</span><span class="p">)</span> <span class="p">:</span>
-  <span class="n">filtering</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">filtering</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">txt_stopwords</span><span class="p">]</span>
-  <span class="k">return</span> <span class="n">filtering</span>
-
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopwords_removal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;comment_normalize&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stopwords_removal</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopwords_removal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#stopword removal 2</span>
-<span class="n">data_stopwords</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;tugas/dataset/list_stopwords.xlsx&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data_stopwords</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">stopwords_removal2</span><span class="p">(</span><span class="nb">filter</span><span class="p">)</span> <span class="p">:</span>
-  <span class="nb">filter</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">filter</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data_stopwords</span><span class="p">]</span>
-  <span class="k">return</span> <span class="nb">filter</span>
-
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopwords_removal_final&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopwords_removal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stopwords_removal2</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopwords_removal_final&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="stemming">
-<h4>5. Stemming<a class="headerlink" href="#stemming" title="Permalink to this heading">#</a></h4>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#proses stem</span>
-<span class="kn">from</span> <span class="nn">Sastrawi.Stemmer.StemmerFactory</span> <span class="kn">import</span> <span class="n">StemmerFactory</span>
-<span class="kn">import</span> <span class="nn">string</span>
-<span class="kn">import</span> <span class="nn">swifter</span>
-<span class="n">factory</span> <span class="o">=</span> <span class="n">StemmerFactory</span><span class="p">()</span>
-<span class="n">stemmer</span> <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="n">create_stemmer</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">stemming</span> <span class="p">(</span><span class="n">term</span><span class="p">):</span>
-  <span class="k">return</span> <span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">term</span><span class="p">)</span>
-
-<span class="n">term_dict</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">for</span> <span class="n">document</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopwords_removal_final&#39;</span><span class="p">]:</span>
-  <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">document</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">term</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">term_dict</span><span class="p">:</span>
-      <span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">term_dict</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-----------------------------&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">term_dict</span><span class="p">:</span>
-  <span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="o">=</span> <span class="n">stemming</span><span class="p">(</span><span class="n">term</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">term</span><span class="p">,</span><span class="s2">&quot;:&quot;</span><span class="p">,</span><span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">term_dict</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-----------------------------&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_stemming</span><span class="p">(</span><span class="n">document</span><span class="p">):</span>
-  <span class="k">return</span> <span class="p">[</span><span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">document</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;stemming&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopwords_removal_final&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">swifter</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_stemming</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;stemming&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="word-embedding-word2vec-cbow">
-<h3>Word Embedding Word2vec CBOW<a class="headerlink" href="#word-embedding-word2vec-cbow" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">gensim</span>
-<span class="kn">from</span> <span class="nn">gensim.models</span> <span class="kn">import</span> <span class="n">Word2Vec</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create CBOW model</span>
-<span class="n">model1</span> <span class="o">=</span> <span class="n">gensim</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Word2Vec</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;stemming&#39;</span><span class="p">],</span> <span class="n">min_count</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
-                              <span class="n">vector_size</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">window</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
- 
-<span class="c1"># Print results</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cosine similarity between &#39;teknologi&#39; &quot;</span> <span class="o">+</span>
-               <span class="s2">&quot;and &#39;system&#39; - CBOW : &quot;</span><span class="p">,</span>
-    <span class="n">model1</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s1">&#39;teknologi&#39;</span><span class="p">,</span> <span class="s1">&#39;system&#39;</span><span class="p">))</span>
-     
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cosine similarity between &#39;teknologi&#39; &quot;</span> <span class="o">+</span>
-                 <span class="s2">&quot;and &#39;mobile&#39; - CBOW : &quot;</span><span class="p">,</span>
-      <span class="n">model1</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s1">&#39;teknologi&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#getting similar word</span>
-<span class="n">sim_words</span> <span class="o">=</span> <span class="n">model1</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s1">&#39;teknologi&#39;</span><span class="p">)</span>
-<span class="n">sim_words</span>
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -2027,17 +1841,13 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-5">Tugas 5</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-6-time-series">TUGAS 6 (TIME SERIES)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uts">UTS</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-7">TUGAS 7</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">Preprocessing Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-punctuation-removal-case-folding">1. Symbol &amp; Punctuation Removal, case folding</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#word-normalization">2. Word Normalization</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing">3. Tokenizing</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stopwords-removal">4. Stopwords Removal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">5. Stemming</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#word-embedding-word2vec-cbow">Word Embedding Word2vec CBOW</a></li>
 </ul>
 </li>
 </ul>
