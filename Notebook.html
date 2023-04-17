@@ -425,14 +425,14 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pagerank">Contoh (PAGERANK)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-8-pagerank">Tugas 8 (PAGERANK)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-graph-berarah-dengan-networkx-minimal-9-node"><strong>1.   Buat graph berarah dengan networkx (minimal 9 node )</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-8-pagerank">Tugas 8 (PAGERANK)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-graph-berarah-dengan-networkx-minimal-9-node"><strong>1.   Buat graph berarah dengan networkx (minimal 9 node )</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pagerank"><strong>Pagerank</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-manual-pagerank"><strong>Perhitungan manual pagerank</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pagerank-menggunakan-networkx"><strong>Pagerank menggunakan networkx</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasiikan-ulang"><strong>2. Implementasiikan ulang</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasiikan-ulang"><strong>2. Implementasiikan ulang</strong></a></li>
 </ul>
             </nav>
         </div>
@@ -462,14 +462,14 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: snscrape in /usr/local/lib/python3.9/dist-packages (0.6.2.20230320)
-Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.11.2)
-Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.11.0)
 Requirement already satisfied: requests[socks] in /usr/local/lib/python3.9/dist-packages (from snscrape) (2.27.1)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.11.2)
 Requirement already satisfied: lxml in /usr/local/lib/python3.9/dist-packages (from snscrape) (4.9.2)
+Requirement already satisfied: filelock in /usr/local/lib/python3.9/dist-packages (from snscrape) (3.11.0)
 Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.9/dist-packages (from beautifulsoup4-&gt;snscrape) (2.4)
-Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2.0.12)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (3.4)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (2.0.12)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.26.15)
 Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/python3.9/dist-packages (from requests[socks]-&gt;snscrape) (1.7.1)
 </pre></div>
@@ -507,8 +507,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "1cd53727f2b44df397c731bee29673e6"}</script><div class="output text_html">
-  <div id="df-c6391bf9-997c-4657-b206-8c4ed3368ab5">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "00d8bdbdb0724c32895421593a4afdcf"}</script><div class="output text_html">
+  <div id="df-f7c926db-d901-4a2b-80f5-4d9ebe941bd2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -572,39 +572,39 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
     </tr>
     <tr>
       <th>497</th>
+      <td>kadaris20</td>
+      <td>@Dahnilanzar @prabowo @CNNIndonesia @Gerindra ...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>498</th>
       <td>OrgenesKotouki</td>
       <td>@sandiuno Luar Biasa pak.</td>
       <td></td>
     </tr>
     <tr>
-      <th>498</th>
+      <th>499</th>
       <td>TlHamid</td>
       <td>@Dahnilanzar @prabowo @CNNIndonesia @Gerindra ...</td>
       <td></td>
     </tr>
     <tr>
-      <th>499</th>
+      <th>500</th>
       <td>perangutan23</td>
       <td>@Aphrodite_AB1 @AdianNapitupul1 @erickthohir n...</td>
       <td>Indonesia</td>
     </tr>
     <tr>
-      <th>500</th>
+      <th>501</th>
       <td>Kemenparekraf</td>
       <td>Webinar yang akan dibuka oleh Menparekraf @san...</td>
       <td>Jakarta Pusat, DKI Jakarta</td>
-    </tr>
-    <tr>
-      <th>501</th>
-      <td>pendi138</td>
-      <td>@Dahnilanzar @prabowo @CNNIndonesia @Gerindra ...</td>
-      <td>Sukabumi, Indonesia</td>
     </tr>
   </tbody>
 </table>
 <p>502 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c6391bf9-997c-4657-b206-8c4ed3368ab5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f7c926db-d901-4a2b-80f5-4d9ebe941bd2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -655,12 +655,12 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c6391bf9-997c-4657-b206-8c4ed3368ab5 button.colab-df-convert');
+          document.querySelector('#df-f7c926db-d901-4a2b-80f5-4d9ebe941bd2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c6391bf9-997c-4657-b206-8c4ed3368ab5');
+          const element = document.querySelector('#df-f7c926db-d901-4a2b-80f5-4d9ebe941bd2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -760,11 +760,11 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
 <span class="nn">&lt;ipython-input-6-ae1604b713e1&gt;</span> in <span class="ni">&lt;cell line: 14&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1">#proses perulangan untuk crawling data</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">172</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">15</span>   <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span>   <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">17</span>   <span class="n">items</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">,{</span><span class="s1">&#39;data-id&#39;</span><span class="p">:</span><span class="s1">&#39;id-1&#39;</span><span class="p">})</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span>       <span class="n">listJudul</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span>       <span class="n">listPenulis</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">penulis</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">29</span>       <span class="n">req2</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">link</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span>       <span class="n">soup2</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req2</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span>       <span class="n">items2</span> <span class="o">=</span> <span class="n">soup2</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">,{</span><span class="s1">&#39;data-id&#39;</span><span class="p">:</span><span class="s1">&#39;id-1&#39;</span><span class="p">})</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/requests/api.py</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
 <span class="g g-Whitespace">     </span><span class="mi">73</span>     <span class="s2">&quot;&quot;&quot;</span>
@@ -830,46 +830,25 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 <span class="g g-Whitespace">    </span><span class="mi">143</span><span class="s2">                 try:</span>
 
 <span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/connection.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">417</span><span class="s2">             context.load_default_certs()</span>
-<span class="g g-Whitespace">    </span><span class="mi">418</span><span class="s2"> </span>
-<span class="ne">--&gt; </span><span class="mi">419</span><span class="s2">         self.sock = ssl_wrap_socket(</span>
-<span class="g g-Whitespace">    </span><span class="mi">420</span><span class="s2">             sock=conn,</span>
-<span class="g g-Whitespace">    </span><span class="mi">421</span><span class="s2">             keyfile=self.key_file,</span>
+<span class="g g-Whitespace">    </span><span class="mi">361</span><span class="s2">     def connect(self):</span>
+<span class="g g-Whitespace">    </span><span class="mi">362</span><span class="s2">         # Add certificate verification</span>
+<span class="ne">--&gt; </span><span class="mi">363</span><span class="s2">         self.sock = conn = self._new_conn()</span>
+<span class="g g-Whitespace">    </span><span class="mi">364</span><span class="s2">         hostname = self.host</span>
+<span class="g g-Whitespace">    </span><span class="mi">365</span><span class="s2">         tls_in_tls = False</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/util/ssl_.py</span> in <span class="ni">ssl_wrap_socket</span><span class="nt">(sock, keyfile, certfile, cert_reqs, ca_certs, server_hostname, ssl_version, ciphers, ssl_context, ca_cert_dir, key_password, ca_cert_data, tls_in_tls)</span>
-<span class="g g-Whitespace">    </span><span class="mi">447</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">448</span><span class="s2">     if send_sni:</span>
-<span class="ne">--&gt; </span><span class="mi">449</span><span class="s2">         ssl_sock = _ssl_wrap_socket_impl(</span>
-<span class="g g-Whitespace">    </span><span class="mi">450</span><span class="s2">             sock, context, tls_in_tls, server_hostname=server_hostname</span>
-<span class="g g-Whitespace">    </span><span class="mi">451</span><span class="s2">         )</span>
+<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/connection.py</span> in <span class="ni">_new_conn</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">173</span><span class="s2">         try:</span>
+<span class="ne">--&gt; </span><span class="mi">174</span><span class="s2">             conn = connection.create_connection(</span>
+<span class="g g-Whitespace">    </span><span class="mi">175</span><span class="s2">                 (self._dns_host, self.port), self.timeout, **extra_kw</span>
+<span class="g g-Whitespace">    </span><span class="mi">176</span><span class="s2">             )</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/util/ssl_.py</span> in <span class="ni">_ssl_wrap_socket_impl</span><span class="nt">(sock, ssl_context, tls_in_tls, server_hostname)</span>
-<span class="g g-Whitespace">    </span><span class="mi">491</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">492</span><span class="s2">     if server_hostname:</span>
-<span class="ne">--&gt; </span><span class="mi">493</span><span class="s2">         return ssl_context.wrap_socket(sock, server_hostname=server_hostname)</span>
-<span class="g g-Whitespace">    </span><span class="mi">494</span><span class="s2">     else:</span>
-<span class="g g-Whitespace">    </span><span class="mi">495</span><span class="s2">         return ssl_context.wrap_socket(sock)</span>
-
-<span class="nn">/usr/lib/python3.9/ssl.py</span> in <span class="ni">wrap_socket</span><span class="nt">(self, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, session)</span>
-<span class="g g-Whitespace">    </span><span class="mi">499</span><span class="s2">         # SSLSocket class handles server_hostname encoding before it calls</span>
-<span class="g g-Whitespace">    </span><span class="mi">500</span><span class="s2">         # ctx._wrap_socket()</span>
-<span class="ne">--&gt; </span><span class="mi">501</span><span class="s2">         return self.sslsocket_class._create(</span>
-<span class="g g-Whitespace">    </span><span class="mi">502</span><span class="s2">             sock=sock,</span>
-<span class="g g-Whitespace">    </span><span class="mi">503</span><span class="s2">             server_side=server_side,</span>
-
-<span class="nn">/usr/lib/python3.9/ssl.py</span> in <span class="ni">_create</span><span class="nt">(cls, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, context, session)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span><span class="s2">                         # non-blocking</span>
-<span class="g g-Whitespace">   </span><span class="mi">1040</span><span class="s2">                         raise ValueError(&quot;do_handshake_on_connect should not be specified for non-blocking sockets&quot;)</span>
-<span class="ne">-&gt; </span><span class="mi">1041</span><span class="s2">                     self.do_handshake()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1042</span><span class="s2">             except (OSError, ValueError):</span>
-<span class="g g-Whitespace">   </span><span class="mi">1043</span><span class="s2">                 self.close()</span>
-
-<span class="nn">/usr/lib/python3.9/ssl.py</span> in <span class="ni">do_handshake</span><span class="nt">(self, block)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1308</span><span class="s2">             if timeout == 0.0 and block:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1309</span><span class="s2">                 self.settimeout(None)</span>
-<span class="ne">-&gt; </span><span class="mi">1310</span><span class="s2">             self._sslobj.do_handshake()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1311</span><span class="s2">         finally:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1312</span><span class="s2">             self.settimeout(timeout)</span>
+<span class="nn">/usr/local/lib/python3.9/dist-packages/urllib3/util/connection.py</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address, socket_options)</span>
+<span class="g g-Whitespace">     </span><span class="mi">83</span><span class="s2">             if source_address:</span>
+<span class="g g-Whitespace">     </span><span class="mi">84</span><span class="s2">                 sock.bind(source_address)</span>
+<span class="ne">---&gt; </span><span class="mi">85</span><span class="s2">             sock.connect(sa)</span>
+<span class="g g-Whitespace">     </span><span class="mi">86</span><span class="s2">             return sock</span>
+<span class="g g-Whitespace">     </span><span class="mi">87</span><span class="s2"> </span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -1956,9 +1935,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 <li><p>Upload di github repository webstatis masing masing</p></li>
 <li><p>Beri penjelasan terkait dengan proses</p></li>
 </ol>
-</div>
 <div class="section" id="buat-graph-berarah-dengan-networkx-minimal-9-node">
-<h2><strong>1.   Buat graph berarah dengan networkx (minimal 9 node )</strong><a class="headerlink" href="#buat-graph-berarah-dengan-networkx-minimal-9-node" title="Permalink to this heading">#</a></h2>
+<h3><strong>1.   Buat graph berarah dengan networkx (minimal 9 node )</strong><a class="headerlink" href="#buat-graph-berarah-dengan-networkx-minimal-9-node" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
@@ -1992,6 +1970,7 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -2046,9 +2025,8 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="implementasiikan-ulang">
-<h2><strong>2. Implementasiikan ulang</strong><a class="headerlink" href="#implementasiikan-ulang" title="Permalink to this heading">#</a></h2>
+<h3><strong>2. Implementasiikan ulang</strong><a class="headerlink" href="#implementasiikan-ulang" title="Permalink to this heading">#</a></h3>
 <p><strong><a class="github reference external" href="https://github.com/Shakunni/Extractive-Text-Summarization/blob/master/extractive_summarizer.ipynb">Shakunni/Extractive-Text-Summarization</a></strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2365,6 +2343,7 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 </div>
 </div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -2476,14 +2455,14 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pagerank">Contoh (PAGERANK)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-8-pagerank">Tugas 8 (PAGERANK)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-graph-berarah-dengan-networkx-minimal-9-node"><strong>1.   Buat graph berarah dengan networkx (minimal 9 node )</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-8-pagerank">Tugas 8 (PAGERANK)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-graph-berarah-dengan-networkx-minimal-9-node"><strong>1.   Buat graph berarah dengan networkx (minimal 9 node )</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pagerank"><strong>Pagerank</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-manual-pagerank"><strong>Perhitungan manual pagerank</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pagerank-menggunakan-networkx"><strong>Pagerank menggunakan networkx</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasiikan-ulang"><strong>2. Implementasiikan ulang</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasiikan-ulang"><strong>2. Implementasiikan ulang</strong></a></li>
 </ul>
   </nav></div>
 
