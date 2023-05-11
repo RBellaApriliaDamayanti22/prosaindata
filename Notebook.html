@@ -158,7 +158,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">TUGAS PSD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tugas9_topicmodelling.html">Tugas 9 (LSA Topic Modelling)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUGAS%209%20%28Topic%20Modelling%29.html">Tugas 9 (LSA Topic Modelling)</a></li>
 </ul>
 
     </div>
@@ -425,7 +425,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">5. Stemming</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pagerank">Contoh (PAGERANK)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-8-pagerank">Tugas 8 (PAGERANK)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-graph-berarah-dengan-networkx-minimal-9-node"><strong>1.   Buat graph berarah dengan networkx (minimal 9 node )</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pagerank"><strong>Pagerank</strong></a></li>
@@ -434,7 +433,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasiikan-ulang"><strong>2. Implementasiikan ulang</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-topic-modelling-feature-extraction-text-tfidfvectorizer">Contoh (Topic Modelling) Feature_extraction.text.TfidfVectorizer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-9-lsa-topic-modelling">Tugas 9 (LSA Topic Modelling)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-data">Read Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">Modelling</a></li>
@@ -470,13 +468,8 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Collecting snscrape
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading snscrape-0.6.2.20230320-py3-none-any.whl (71 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/71.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">71.8/71.8 kB</span> <span class=" -Color -Color-Red">3.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hRequirement already satisfied: requests[socks] in /usr/local/lib/python3.10/dist-packages (from snscrape) (2.27.1)
+Requirement already satisfied: snscrape in /usr/local/lib/python3.10/dist-packages (0.6.2.20230320)
+Requirement already satisfied: requests[socks] in /usr/local/lib/python3.10/dist-packages (from snscrape) (2.27.1)
 Requirement already satisfied: lxml in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.9.2)
 Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.11.2)
 Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from snscrape) (3.12.0)
@@ -486,10 +479,6 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.1
 Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.10/dist-packages (from requests[socks]-&gt;snscrape) (2.0.12)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from requests[socks]-&gt;snscrape) (3.4)
 Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/python3.10/dist-packages (from requests[socks]-&gt;snscrape) (1.7.1)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: snscrape
-Successfully installed snscrape-0.6.2.20230320
 </pre></div>
 </div>
 </div>
@@ -525,7 +514,7 @@ Successfully installed snscrape-0.6.2.20230320
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "2f52dff064294b1faf3a2297992f9471"}</script><div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ERROR:snscrape.base:Error retrieving https://api.twitter.com/2/search/adaptive.json?include_profile_interstitial_type=1&amp;include_blocking=1&amp;include_blocked_by=1&amp;include_followed_by=1&amp;include_want_retweets=1&amp;include_mute_edge=1&amp;include_can_dm=1&amp;include_can_media_tag=1&amp;include_ext_has_nft_avatar=1&amp;include_ext_is_blue_verified=1&amp;include_ext_verified_type=1&amp;skip_status=1&amp;cards_platform=Web-12&amp;include_cards=1&amp;include_ext_alt_text=true&amp;include_ext_limited_action_results=false&amp;include_quote_count=true&amp;include_reply_count=1&amp;tweet_mode=extended&amp;include_ext_collab_control=true&amp;include_ext_views=true&amp;include_entities=true&amp;include_user_entities=true&amp;include_ext_media_color=true&amp;include_ext_media_availability=true&amp;include_ext_sensitive_media_warning=true&amp;include_ext_trusted_friends_metadata=true&amp;send_error_codes=true&amp;simple_quoted_tweet=true&amp;q=sandiuno&amp;tweet_search_mode=live&amp;count=20&amp;query_source=spelling_expansion_revert_click&amp;pc=1&amp;spelling_corrections=1&amp;include_ext_edit_control=true&amp;ext=mediaStats%2ChighlightedLabel%2ChasNftAvatar%2CvoiceInfo%2Cenrichments%2CsuperFollowMetadata%2CunmentionInfo%2CeditControl%2Ccollab_control%2Cvibe: blocked (403)
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "66a33670ec02444495b608e5e4628600"}</script><div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ERROR:snscrape.base:Error retrieving https://api.twitter.com/2/search/adaptive.json?include_profile_interstitial_type=1&amp;include_blocking=1&amp;include_blocked_by=1&amp;include_followed_by=1&amp;include_want_retweets=1&amp;include_mute_edge=1&amp;include_can_dm=1&amp;include_can_media_tag=1&amp;include_ext_has_nft_avatar=1&amp;include_ext_is_blue_verified=1&amp;include_ext_verified_type=1&amp;skip_status=1&amp;cards_platform=Web-12&amp;include_cards=1&amp;include_ext_alt_text=true&amp;include_ext_limited_action_results=false&amp;include_quote_count=true&amp;include_reply_count=1&amp;tweet_mode=extended&amp;include_ext_collab_control=true&amp;include_ext_views=true&amp;include_entities=true&amp;include_user_entities=true&amp;include_ext_media_color=true&amp;include_ext_media_availability=true&amp;include_ext_sensitive_media_warning=true&amp;include_ext_trusted_friends_metadata=true&amp;send_error_codes=true&amp;simple_quoted_tweet=true&amp;q=sandiuno&amp;tweet_search_mode=live&amp;count=20&amp;query_source=spelling_expansion_revert_click&amp;pc=1&amp;spelling_corrections=1&amp;include_ext_edit_control=true&amp;ext=mediaStats%2ChighlightedLabel%2ChasNftAvatar%2CvoiceInfo%2Cenrichments%2CsuperFollowMetadata%2CunmentionInfo%2CeditControl%2Ccollab_control%2Cvibe: blocked (403)
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRITICAL:snscrape.base:4 requests to https://api.twitter.com/2/search/adaptive.json?include_profile_interstitial_type=1&amp;include_blocking=1&amp;include_blocked_by=1&amp;include_followed_by=1&amp;include_want_retweets=1&amp;include_mute_edge=1&amp;include_can_dm=1&amp;include_can_media_tag=1&amp;include_ext_has_nft_avatar=1&amp;include_ext_is_blue_verified=1&amp;include_ext_verified_type=1&amp;skip_status=1&amp;cards_platform=Web-12&amp;include_cards=1&amp;include_ext_alt_text=true&amp;include_ext_limited_action_results=false&amp;include_quote_count=true&amp;include_reply_count=1&amp;tweet_mode=extended&amp;include_ext_collab_control=true&amp;include_ext_views=true&amp;include_entities=true&amp;include_user_entities=true&amp;include_ext_media_color=true&amp;include_ext_media_availability=true&amp;include_ext_sensitive_media_warning=true&amp;include_ext_trusted_friends_metadata=true&amp;send_error_codes=true&amp;simple_quoted_tweet=true&amp;q=sandiuno&amp;tweet_search_mode=live&amp;count=20&amp;query_source=spelling_expansion_revert_click&amp;pc=1&amp;spelling_corrections=1&amp;include_ext_edit_control=true&amp;ext=mediaStats%2ChighlightedLabel%2ChasNftAvatar%2CvoiceInfo%2Cenrichments%2CsuperFollowMetadata%2CunmentionInfo%2CeditControl%2Ccollab_control%2Cvibe failed, giving up.
@@ -1691,54 +1680,6 @@ Successfully installed snscrape-0.6.2.20230320
 </div>
 </div>
 </div>
-<div class="section" id="contoh-pagerank">
-<h2>Contoh (PAGERANK)<a class="headerlink" href="#contoh-pagerank" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
-<span class="kn">import</span> <span class="nn">pylab</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">G</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">),(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">),(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">),(</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">),(</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">),(</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">),(</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">),(</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">)])</span>
- <span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">degree_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">betweenness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">closeness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Normalisasi_betweenness_centrality</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 <div class="section" id="tugas-8-pagerank">
 <h2>Tugas 8 (PAGERANK)<a class="headerlink" href="#tugas-8-pagerank" title="Permalink to this heading">#</a></h2>
 <p><strong>Tugas :</strong></p>
@@ -2161,44 +2102,6 @@ Successfully installed snscrape-0.6.2.20230320
 </div>
 </div>
 </div>
-<div class="section" id="contoh-topic-modelling-feature-extraction-text-tfidfvectorizer">
-<h2>Contoh (Topic Modelling) Feature_extraction.text.TfidfVectorizer<a class="headerlink" href="#contoh-topic-modelling-feature-extraction-text-tfidfvectorizer" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cospus</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;This is the first document.&#39;</span><span class="p">,</span>
-<span class="o">...</span>     <span class="s1">&#39;This document is the second document.&#39;</span><span class="p">,</span>
-<span class="o">...</span>     <span class="s1">&#39;And this is the third one.&#39;</span><span class="p">,</span>
-<span class="o">...</span>     <span class="s1">&#39;Is this the first document?&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
-<span class="n">X</span><span class="o">=</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">cospus</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 <div class="section" id="tugas-9-lsa-topic-modelling">
 <h2>Tugas 9 (LSA Topic Modelling)<a class="headerlink" href="#tugas-9-lsa-topic-modelling" title="Permalink to this heading">#</a></h2>
 <div class="section" id="read-data">
@@ -2398,7 +2301,6 @@ Successfully installed snscrape-0.6.2.20230320
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">5. Stemming</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pagerank">Contoh (PAGERANK)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-8-pagerank">Tugas 8 (PAGERANK)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-graph-berarah-dengan-networkx-minimal-9-node"><strong>1.   Buat graph berarah dengan networkx (minimal 9 node )</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pagerank"><strong>Pagerank</strong></a></li>
@@ -2407,7 +2309,6 @@ Successfully installed snscrape-0.6.2.20230320
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasiikan-ulang"><strong>2. Implementasiikan ulang</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-topic-modelling-feature-extraction-text-tfidfvectorizer">Contoh (Topic Modelling) Feature_extraction.text.TfidfVectorizer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-9-lsa-topic-modelling">Tugas 9 (LSA Topic Modelling)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-data">Read Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">Modelling</a></li>
