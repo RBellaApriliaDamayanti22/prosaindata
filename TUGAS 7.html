@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UTS &#8212; Data Mining</title>
+    <title>TUGAS 7 &#8212; Data Mining</title>
   
   
   
@@ -60,11 +60,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'UTS';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'TUGAS 7';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="TUGAS 2 (Crawling data Website https://pta.trunojoyo.ac.id/ )" href="TUGAS%202%20%28Crawling%20data%20Website%29.html" />
-    <link rel="prev" title="TUGAS PSD" href="Notebook.html" />
+    <link rel="next" title="Tugas 8 (PAGERANK)" href="TUGAS%208%20%28PAGERANK%29.html" />
+    <link rel="prev" title="TUGAS 6 (TIME SERIES)" href="TUGAS%206%20%28TIME%20SERIES%29.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,13 +157,13 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Notebook.html">TUGAS PSD</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">UTS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%202%20%28Crawling%20data%20Website%29.html">TUGAS 2 (Crawling data Website https://pta.trunojoyo.ac.id/ )</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%203%20%28Crawling%20data%20Website%20Berita%20CNN%29.html">TUGAS 3 (Crawling data Website Berita CNN)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%204%20%28Pipelines%29.html">TUGAS 4 (Pipelines)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%205.html">TUGAS 5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%206%20%28TIME%20SERIES%29.html">TUGAS 6 (TIME SERIES)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TUGAS%207.html">TUGAS 7</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TUGAS 7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%208%20%28PAGERANK%29.html">Tugas 8 (PAGERANK)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%209%20%28Topic%20Modelling%29.html">Tugas 9 (LSA Topic Modelling)</a></li>
 </ul>
@@ -220,7 +220,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/RBellaApriliaDamayanti22/prosaindata/blob/gh-pages/_sources/UTS.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/RBellaApriliaDamayanti22/prosaindata/blob/gh-pages/_sources/TUGAS 7.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -268,7 +268,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/RBellaApriliaDamayanti22/prosaindata/issues/new?title=Issue%20on%20page%20%2FUTS.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/RBellaApriliaDamayanti22/prosaindata/issues/new?title=Issue%20on%20page%20%2FTUGAS 7.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -298,7 +298,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/UTS.ipynb" target="_blank"
+      <li><a href="_sources/TUGAS 7.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -380,7 +380,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>UTS</h1>
+    <h1>TUGAS 7</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,32 +390,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi-merupakan-kata-serapan-dari-bahasa-belanda-classificatie-yang-sendirinya-berasal-dari-bahasa-prancis-classification">Klasifikasi merupakan kata serapan dari bahasa Belanda, classificatie, yang sendirinya berasal dari bahasa Prancis classification.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">Preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">Preprocessing Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-punctuation-removal-case-folding">1. Symbol &amp; Punctuation Removal, case folding</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#word-normalization">2. Word Normalization</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing">3. Tokenizing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stopwords-removal">4. Stopwords Removal</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">5. Stemming</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-tf-idf">Normalisasi Data (Tf IDF)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-data">splitting data</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-pca">Implementasi PCA</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-metode-naive-bayes">Implementasi metode Naive Bayes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes-adalah-metode-klasifikasi-data-berdasarkan-probabilitas-yang-bisa-saja-terjadi-di-masa-depan-metode-ini-dianggap-simpel-dan-efektif-untuk-diterapkan-dalam-analisis-perusahaan">- Naive Bayes adalah metode klasifikasi data berdasarkan probabilitas yang bisa saja terjadi di masa depan. Metode ini dianggap simpel dan efektif untuk diterapkan dalam analisis perusahaan.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-akurasi">Menghitung akurasi</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-metode-knn">Implementasi metode KNN</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#knn-merupakan-algoritma-klasifikasi-yang-paling-sederhana-dalam-mengklasifikasikan-sebuah-gambar-kedalam-sebuah-label-metode-ini-mudah-dipahami-dibandingkan-metode-lain-karena-mengklasifikasikan-berdasarkan-jarak-terdekat-dengan-objek-lain-tetangga">- KNN merupakan algoritma klasifikasi yang paling sederhana dalam mengklasifikasikan sebuah gambar kedalam sebuah label. Metode ini mudah dipahami dibandingkan metode lain karena mengklasifikasikan berdasarkan jarak terdekat dengan objek lain (tetangga).</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Menghitung akurasi</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing">3. Tokenizing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stopwords-removal">4. Stopwords Removal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">5. Stemming</a></li>
 </ul>
             </nav>
         </div>
@@ -427,14 +410,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="uts">
-<h1>UTS<a class="headerlink" href="#uts" title="Permalink to this heading">#</a></h1>
-<p>Nama : R.Bella Aprilia Damayanti <br>
-NIM : 200411100082 <br>
-Kelas : PSD B</p>
-<div class="section" id="klasifikasi-merupakan-kata-serapan-dari-bahasa-belanda-classificatie-yang-sendirinya-berasal-dari-bahasa-prancis-classification">
-<h2>Klasifikasi merupakan kata serapan dari bahasa Belanda, classificatie, yang sendirinya berasal dari bahasa Prancis classification.<a class="headerlink" href="#klasifikasi-merupakan-kata-serapan-dari-bahasa-belanda-classificatie-yang-sendirinya-berasal-dari-bahasa-prancis-classification" title="Permalink to this heading">#</a></h2>
-</div>
+  <div class="section" id="tugas-7">
+<h1>TUGAS 7<a class="headerlink" href="#tugas-7" title="Permalink to this heading">#</a></h1>
 <div class="section" id="load-data">
 <h2>Load Data<a class="headerlink" href="#load-data" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -562,8 +539,8 @@ Kelas : PSD B</p>
 </div>
 </div>
 </div>
-<div class="section" id="preprocessing">
-<h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this heading">#</a></h2>
+<div class="section" id="preprocessing-data">
+<h2>Preprocessing Data<a class="headerlink" href="#preprocessing-data" title="Permalink to this heading">#</a></h2>
 <div class="section" id="symbol-punctuation-removal-case-folding">
 <h3>1. Symbol &amp; Punctuation Removal, case folding<a class="headerlink" href="#symbol-punctuation-removal-case-folding" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
@@ -653,11 +630,12 @@ Kelas : PSD B</p>
 </div>
 </div>
 </div>
+</div>
 <div class="section" id="tokenizing">
-<h3>3. Tokenizing<a class="headerlink" href="#tokenizing" title="Permalink to this heading">#</a></h3>
+<h2>3. Tokenizing<a class="headerlink" href="#tokenizing" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="stopwords-removal">
-<h3>4. Stopwords Removal<a class="headerlink" href="#stopwords-removal" title="Permalink to this heading">#</a></h3>
+<h2>4. Stopwords Removal<a class="headerlink" href="#stopwords-removal" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Stopword Removal</span>
@@ -693,7 +671,7 @@ Kelas : PSD B</p>
 </div>
 </div>
 <div class="section" id="stemming">
-<h3>5. Stemming<a class="headerlink" href="#stemming" title="Permalink to this heading">#</a></h3>
+<h2>5. Stemming<a class="headerlink" href="#stemming" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#proses stem</span>
@@ -766,149 +744,6 @@ Kelas : PSD B</p>
 </div>
 </div>
 </div>
-<div class="section" id="pca">
-<h2>PCA<a class="headerlink" href="#pca" title="Permalink to this heading">#</a></h2>
-<p><strong>Principal Component Analysis (PCA)</strong> adalah salah satu metode reduksi dimensi pada machine learning. PCA akan memilih œvariabel-variabel yang mampu menjelaskan sebagian besar variabilitas data. PCA mengurangi dimensi dengan membentuk variabel-variabel baru yang disebut Principal Components. Principal Components yang merupakan kombinasi linier dari variabel-variabel lama. Penghitungan Varians dan Principal Component ini dapat dilakukan dengan menggunakan konsep nilai eigen (eigenvalue) dan vektor eigen (eigenvector) dari ilmu Aljabar Linier.</p>
-<p><strong>Principal Component Analysis (PCA)</strong> tentunya punya banyak manfaat dalam proses analisis data, misal:</p>
-<ul class="simple">
-<li><p>Mengatasi multikolinieritas yang pada metode parametrik tertentu merupakan</p></li>
-<li><p>asumsi yang harus dipenuhi</p></li>
-<li><p>Mereduksi jumlah variabel yang akan dimasukkan ke model</p></li>
-<li><p>Jumlah variabel yang lebih sedikit tentu akan menyederhanakan model</p></li>
-<li><p>Juga mempercepat proses komputasi</p></li>
-</ul>
-<div class="section" id="normalisasi-data-tf-idf">
-<h3>Normalisasi Data (Tf IDF)<a class="headerlink" href="#normalisasi-data-tf-idf" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">joinkata</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-  <span class="n">kalimat</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-    <span class="n">kalimat</span> <span class="o">+=</span> <span class="n">i</span>
-    <span class="n">kalimat</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span>
-  <span class="k">return</span> <span class="n">kalimat</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;stemming&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">swifter</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">joinkata</span><span class="p">)</span>
-<span class="n">text</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
-<span class="n">tfidf_vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
-<span class="n">tfidf_separate</span> <span class="o">=</span> <span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-
-<span class="n">df_tfidf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
-    <span class="n">tfidf_separate</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">(),</span> <span class="n">index</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span>
-<span class="p">)</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">df_tfidf</span><span class="o">.</span><span class="n">values</span>
-<span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Label&#39;</span><span class="p">]</span>
-<span class="n">df_tfidf</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Y</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="splitting-data">
-<h3>splitting data<a class="headerlink" href="#splitting-data" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">,</span> <span class="n">Y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span> 
-    <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah Data training : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah Data test : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_test</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="implementasi-pca">
-<h2>Implementasi PCA<a class="headerlink" href="#implementasi-pca" title="Permalink to this heading">#</a></h2>
-<p>Melakukan skenario uji coba dengan mereduksi fitur dengan n component sebanyak 2,4,6,8,10</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
-
-<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span> <span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="n">X_train_2</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
-<span class="n">X_test_2</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-
-<span class="n">pca</span><span class="o">.</span><span class="n">explained_variance_ratio_</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="implementasi-metode-naive-bayes">
-<h2>Implementasi metode Naive Bayes<a class="headerlink" href="#implementasi-metode-naive-bayes" title="Permalink to this heading">#</a></h2>
-</div>
-<div class="section" id="naive-bayes-adalah-metode-klasifikasi-data-berdasarkan-probabilitas-yang-bisa-saja-terjadi-di-masa-depan-metode-ini-dianggap-simpel-dan-efektif-untuk-diterapkan-dalam-analisis-perusahaan">
-<h2>- Naive Bayes adalah metode klasifikasi data berdasarkan probabilitas yang bisa saja terjadi di masa depan. Metode ini dianggap simpel dan efektif untuk diterapkan dalam analisis perusahaan.<a class="headerlink" href="#naive-bayes-adalah-metode-klasifikasi-data-berdasarkan-probabilitas-yang-bisa-saja-terjadi-di-masa-depan-metode-ini-dianggap-simpel-dan-efektif-untuk-diterapkan-dalam-analisis-perusahaan" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
-<span class="n">gnb_model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-<span class="n">gnb_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_2</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="menghitung-akurasi">
-<h3>Menghitung akurasi<a class="headerlink" href="#menghitung-akurasi" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">gnb_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_2</span><span class="p">)</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot; GNB Accuracy : &quot;</span><span class="p">,</span>
-    <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span><span class="n">Y_pred</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="implementasi-metode-knn">
-<h2>Implementasi metode KNN<a class="headerlink" href="#implementasi-metode-knn" title="Permalink to this heading">#</a></h2>
-</div>
-<div class="section" id="knn-merupakan-algoritma-klasifikasi-yang-paling-sederhana-dalam-mengklasifikasikan-sebuah-gambar-kedalam-sebuah-label-metode-ini-mudah-dipahami-dibandingkan-metode-lain-karena-mengklasifikasikan-berdasarkan-jarak-terdekat-dengan-objek-lain-tetangga">
-<h2>- KNN merupakan algoritma klasifikasi yang paling sederhana dalam mengklasifikasikan sebuah gambar kedalam sebuah label. Metode ini mudah dipahami dibandingkan metode lain karena mengklasifikasikan berdasarkan jarak terdekat dengan objek lain (tetangga).<a class="headerlink" href="#knn-merupakan-algoritma-klasifikasi-yang-paling-sederhana-dalam-mengklasifikasikan-sebuah-gambar-kedalam-sebuah-label-metode-ini-mudah-dipahami-dibandingkan-metode-lain-karena-mengklasifikasikan-berdasarkan-jarak-terdekat-dengan-objek-lain-tetangga" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import knn</span>
-<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
-<span class="n">KNN_model</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">KNN_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_2</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="id1">
-<h3>Menghitung akurasi<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">KNN_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_2</span><span class="p">)</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot; KNN Accuracy : &quot;</span><span class="p">,</span>
-    <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span><span class="n">Y_pred</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
     <script type="text/x-thebe-config">
     {
@@ -942,20 +777,20 @@ Kelas : PSD B</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Notebook.html"
+       href="TUGAS%206%20%28TIME%20SERIES%29.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">TUGAS PSD</p>
+        <p class="prev-next-title">TUGAS 6 (TIME SERIES)</p>
       </div>
     </a>
     <a class="right-next"
-       href="TUGAS%202%20%28Crawling%20data%20Website%29.html"
+       href="TUGAS%208%20%28PAGERANK%29.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">TUGAS 2 (Crawling data Website https://pta.trunojoyo.ac.id/ )</p>
+        <p class="prev-next-title">Tugas 8 (PAGERANK)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -977,32 +812,15 @@ Kelas : PSD B</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi-merupakan-kata-serapan-dari-bahasa-belanda-classificatie-yang-sendirinya-berasal-dari-bahasa-prancis-classification">Klasifikasi merupakan kata serapan dari bahasa Belanda, classificatie, yang sendirinya berasal dari bahasa Prancis classification.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">Preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">Preprocessing Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-punctuation-removal-case-folding">1. Symbol &amp; Punctuation Removal, case folding</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#word-normalization">2. Word Normalization</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing">3. Tokenizing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stopwords-removal">4. Stopwords Removal</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">5. Stemming</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-tf-idf">Normalisasi Data (Tf IDF)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-data">splitting data</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-pca">Implementasi PCA</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-metode-naive-bayes">Implementasi metode Naive Bayes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes-adalah-metode-klasifikasi-data-berdasarkan-probabilitas-yang-bisa-saja-terjadi-di-masa-depan-metode-ini-dianggap-simpel-dan-efektif-untuk-diterapkan-dalam-analisis-perusahaan">- Naive Bayes adalah metode klasifikasi data berdasarkan probabilitas yang bisa saja terjadi di masa depan. Metode ini dianggap simpel dan efektif untuk diterapkan dalam analisis perusahaan.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-akurasi">Menghitung akurasi</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-metode-knn">Implementasi metode KNN</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#knn-merupakan-algoritma-klasifikasi-yang-paling-sederhana-dalam-mengklasifikasikan-sebuah-gambar-kedalam-sebuah-label-metode-ini-mudah-dipahami-dibandingkan-metode-lain-karena-mengklasifikasikan-berdasarkan-jarak-terdekat-dengan-objek-lain-tetangga">- KNN merupakan algoritma klasifikasi yang paling sederhana dalam mengklasifikasikan sebuah gambar kedalam sebuah label. Metode ini mudah dipahami dibandingkan metode lain karena mengklasifikasikan berdasarkan jarak terdekat dengan objek lain (tetangga).</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Menghitung akurasi</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing">3. Tokenizing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stopwords-removal">4. Stopwords Removal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stemming">5. Stemming</a></li>
 </ul>
   </nav></div>
 
