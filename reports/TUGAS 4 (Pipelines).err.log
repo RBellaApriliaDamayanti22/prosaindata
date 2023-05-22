@@ -35,22 +35,13 @@ df_sqlServer
 
 
 [0;31m[0m
-[0;31mModuleNotFoundError[0mTraceback (most recent call last)
-[0;32m<ipython-input-1-2663ed3f6e2e>[0m in [0;36m<cell line: 1>[0;34m()[0m
-[0;32m----> 1[0;31m [0;32mimport[0m [0mpyodbc[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      2[0m [0;32mimport[0m [0mpandas[0m [0;32mas[0m [0mpd[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      3[0m cnxn_str = ("Driver={odbc driver 17 for sql server};"
-[1;32m      4[0m             [0;34m"Server=DESKTOP-GVA3L0V\SQLEXPRESS;"[0m[0;34m[0m[0;34m[0m[0m
+[0;31mError[0mTraceback (most recent call last)
+[0;32m<ipython-input-2-2663ed3f6e2e>[0m in [0;36m<cell line: 7>[0;34m()[0m
 [1;32m      5[0m             [0;34m"Database=prosain200411100082;"[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      6[0m             "Trusted_Connection=yes;")
+[0;32m----> 7[0;31m [0mcnxn[0m [0;34m=[0m [0mpyodbc[0m[0;34m.[0m[0mconnect[0m[0;34m([0m[0mcnxn_str[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      8[0m [0mcursor[0m [0;34m=[0m [0mcnxn[0m[0;34m.[0m[0mcursor[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      9[0m [0mcursor[0m[0;34m.[0m[0mexecute[0m[0;34m([0m[0;34m"SELECT * FROM iris_arff"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-[0;31mModuleNotFoundError[0m: No module named 'pyodbc'
-
-[0;31m---------------------------------------------------------------------------[0;32m
-NOTE: If your import is failing due to a missing package, you can
-manually install dependencies using either !pip or !apt.
-
-To view examples of installing some common dependencies, click the
-"Open Examples" button below.
-[0;31m---------------------------------------------------------------------------[0m
-
+[0;31mError[0m: ('01000', "[01000] [unixODBC][Driver Manager]Can't open lib 'odbc driver 17 for sql server' : file not found (0) (SQLDriverConnect)")
 

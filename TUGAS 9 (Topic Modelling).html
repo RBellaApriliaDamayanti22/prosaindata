@@ -160,11 +160,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%202%20%28Crawling%20data%20Website%29.html">TUGAS 2 (Crawling data Website https://pta.trunojoyo.ac.id/ )</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%203%20%28Crawling%20data%20Website%20Berita%20CNN%29.html">TUGAS 3 (Crawling data Website Berita CNN)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%204%20%28Pipelines%29.html">TUGAS 4 (Pipelines)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TUGAS%205.html">TUGAS 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUGAS%205%20%28PCA%29.html">TUGAS 5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%206%20%28TIME%20SERIES%29.html">TUGAS 6 (TIME SERIES)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TUGAS%207.html">TUGAS 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUGAS%207%20%28CBOW%29.html">TUGAS 7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%208%20%28PAGERANK%29.html">Tugas 8 (PAGERANK)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas 9 (LSA Topic Modelling)</a></li>
+
 </ul>
 
     </div>
@@ -389,11 +390,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas 9 (LSA Topic Modelling)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#topik-modelling">TOPIK MODELLING</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">Import Library</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">Modelling</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bobot-kata-terhadap-masing-masing-topik">bobot kata terhadap masing masing topik</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bobot-setiap-topik-terhadap-dokumen">bobot setiap topik terhadap dokumen</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -406,6 +412,61 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="tugas-9-lsa-topic-modelling">
 <h1>Tugas 9 (LSA Topic Modelling)<a class="headerlink" href="#tugas-9-lsa-topic-modelling" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-1-d5df0069828e&gt;</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, readonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">101</span> <span class="k">def</span> <span class="nf">mount</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">,</span> <span class="n">force_remount</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">timeout_ms</span><span class="o">=</span><span class="mi">120000</span><span class="p">,</span> <span class="n">readonly</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">102</span><span class="w">   </span><span class="sd">&quot;&quot;&quot;Mount your Google Drive at the specified mountpoint path.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">103</span>   <span class="k">return</span> <span class="n">_mount</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">104</span>       <span class="n">mountpoint</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">105</span>       <span class="n">force_remount</span><span class="o">=</span><span class="n">force_remount</span><span class="p">,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral, readonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span>   <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">132</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span> <span class="n">timeout_sec</span><span class="o">=</span><span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span>     <span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">blocking_request</span><span class="nt">(request_type, request, timeout_sec, parent)</span>
+<span class="g g-Whitespace">    </span><span class="mi">174</span>       <span class="n">request_type</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">parent</span><span class="p">,</span> <span class="n">expect_reply</span><span class="o">=</span><span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">175</span>   <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">176</span>   <span class="k">return</span> <span class="n">read_reply_from_input</span><span class="p">(</span><span class="n">request_id</span><span class="p">,</span> <span class="n">timeout_sec</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">reply</span> <span class="o">=</span> <span class="n">_read_next_input_message</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">_NOT_READY</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">96</span>       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.025</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>       <span class="k">continue</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>     <span class="k">if</span> <span class="p">(</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="topik-modelling">
+<h1>TOPIK MODELLING<a class="headerlink" href="#topik-modelling" title="Permalink to this heading">#</a></h1>
+<p>Topik modelling digunakan untuk mengelompokkan data berdasarkan dengan topik tertentu.</p>
+<p>Data : data yang digunakan yaitu dari komentar dengan kata kunci “capres2024”.</p>
+<p>Tugas : LSA : TF IDF &amp; SVD (Singuler Value Decomposition)</p>
+<p>Output :</p>
+<ul class="simple">
+<li><p>Bobot kata terhadap masing masing topik</p></li>
+<li><p>Bobot setiap topik terhadap  dokumen</p></li>
+</ul>
 <div class="section" id="import-library">
 <h2>Import Library<a class="headerlink" href="#import-library" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -418,7 +479,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-230486f8-e49b-4e40-b9a4-ace70de0c9a5">
+  <div id="df-a3f632e6-807b-4630-a8f4-fd5c60bed3dd">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -502,7 +563,7 @@ document.write(`
 </table>
 <p>1165 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-230486f8-e49b-4e40-b9a4-ace70de0c9a5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a3f632e6-807b-4630-a8f4-fd5c60bed3dd')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -553,12 +614,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-230486f8-e49b-4e40-b9a4-ace70de0c9a5 button.colab-df-convert');
+          document.querySelector('#df-a3f632e6-807b-4630-a8f4-fd5c60bed3dd button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-230486f8-e49b-4e40-b9a4-ace70de0c9a5');
+          const element = document.querySelector('#df-a3f632e6-807b-4630-a8f4-fd5c60bed3dd');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -643,10 +704,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Topic 0:  [(&#39;prabowo&#39;, 0.7521319055636801), (&#39;ganjar&#39;, 0.33720700492158046)]
-Topic 1:  [(&#39;ganjar&#39;, 0.7502344279386973), (&#39;pilih&#39;, 0.18677734103808374)]
-Topic 2:  [(&#39;mahfud&#39;, 0.5867574077204636), (&#39;md&#39;, 0.5188186772845276)]
-Topic 3:  [(&#39;anis&#39;, 0.5717456369284238), (&#39;pilih&#39;, 0.3837458942366114)]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Topic 0:  [(&#39;prabowo&#39;, 0.7521155299878107), (&#39;ganjar&#39;, 0.3372049759541212)]
+Topic 1:  [(&#39;ganjar&#39;, 0.7503087350836983), (&#39;pilih&#39;, 0.18707433096166365)]
+Topic 2:  [(&#39;mahfud&#39;, 0.5854867878603073), (&#39;md&#39;, 0.5186006537063022)]
+Topic 3:  [(&#39;anis&#39;, 0.5705283022773839), (&#39;pilih&#39;, 0.37813805344717316)]
 </pre></div>
 </div>
 </div>
@@ -667,7 +728,7 @@ Topic 3:  [(&#39;anis&#39;, 0.5717456369284238), (&#39;pilih&#39;, 0.38374589423
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f277ff19-ed19-4bdc-91a5-7655049f5916">
+  <div id="df-4699db5e-34d9-4409-80c4-30f8ce4d5064">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -699,46 +760,46 @@ Topic 3:  [(&#39;anis&#39;, 0.5717456369284238), (&#39;pilih&#39;, 0.38374589423
     <tr>
       <th>0</th>
       <td>id skip navigation sign ini worship piano begi...</td>
-      <td>0.152405</td>
-      <td>0.051524</td>
-      <td>-0.010292</td>
-      <td>0.048547</td>
+      <td>0.152406</td>
+      <td>0.051516</td>
+      <td>-0.010353</td>
+      <td>0.048775</td>
       <td>0</td>
     </tr>
     <tr>
       <th>1</th>
       <td>pak prabowo subianto saya mohon anda jangan be...</td>
-      <td>0.307171</td>
-      <td>0.188841</td>
-      <td>0.027900</td>
-      <td>-0.116406</td>
+      <td>0.307097</td>
+      <td>0.188707</td>
+      <td>0.024481</td>
+      <td>-0.116215</td>
       <td>0</td>
     </tr>
     <tr>
       <th>2</th>
       <td>gue dan sekeluarga adalah loyalis pdi perjuang...</td>
-      <td>0.054240</td>
-      <td>0.070428</td>
-      <td>-0.004404</td>
-      <td>0.013254</td>
+      <td>0.054225</td>
+      <td>0.070504</td>
+      <td>-0.006355</td>
+      <td>0.016698</td>
       <td>1</td>
     </tr>
     <tr>
       <th>3</th>
       <td>ganjar salah satu yang menolak israel berakiba...</td>
-      <td>0.071634</td>
-      <td>0.146274</td>
-      <td>0.047281</td>
-      <td>-0.040574</td>
+      <td>0.071637</td>
+      <td>0.146175</td>
+      <td>0.047347</td>
+      <td>-0.040282</td>
       <td>1</td>
     </tr>
     <tr>
       <th>4</th>
       <td>pak prabowo sekarang auranya adem beda waktu n...</td>
-      <td>0.098521</td>
-      <td>-0.021412</td>
-      <td>-0.033060</td>
-      <td>-0.032247</td>
+      <td>0.098516</td>
+      <td>-0.021400</td>
+      <td>-0.033330</td>
+      <td>-0.031598</td>
       <td>0</td>
     </tr>
     <tr>
@@ -762,44 +823,44 @@ Topic 3:  [(&#39;anis&#39;, 0.5717456369284238), (&#39;pilih&#39;, 0.38374589423
     <tr>
       <th>1161</th>
       <td>siapa pula yang mau pilih prabowo history masa...</td>
-      <td>0.107988</td>
-      <td>0.008428</td>
-      <td>-0.051115</td>
-      <td>0.057558</td>
+      <td>0.107990</td>
+      <td>0.008479</td>
+      <td>-0.050384</td>
+      <td>0.057005</td>
       <td>0</td>
     </tr>
     <tr>
       <th>1162</th>
       <td>lembaga survei bayaran aslinya pak anies yang ...</td>
-      <td>0.030142</td>
-      <td>0.034732</td>
-      <td>-0.037450</td>
-      <td>0.115456</td>
+      <td>0.030155</td>
+      <td>0.034397</td>
+      <td>-0.036700</td>
+      <td>0.113350</td>
       <td>3</td>
     </tr>
     <tr>
       <th>1163</th>
       <td>siapapun calonya presiden kami rakyat tetap an...</td>
-      <td>0.118899</td>
-      <td>0.049033</td>
-      <td>-0.129931</td>
-      <td>0.277769</td>
+      <td>0.118928</td>
+      <td>0.048969</td>
+      <td>-0.128882</td>
+      <td>0.278921</td>
       <td>3</td>
     </tr>
     <tr>
       <th>1164</th>
       <td>aku tetap dukung pak anies</td>
-      <td>0.110736</td>
-      <td>0.080708</td>
-      <td>-0.092914</td>
-      <td>0.152226</td>
+      <td>0.110669</td>
+      <td>0.080643</td>
+      <td>-0.101255</td>
+      <td>0.162148</td>
       <td>3</td>
     </tr>
   </tbody>
 </table>
 <p>1165 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f277ff19-ed19-4bdc-91a5-7655049f5916')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4699db5e-34d9-4409-80c4-30f8ce4d5064')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -850,12 +911,12 @@ Topic 3:  [(&#39;anis&#39;, 0.5717456369284238), (&#39;pilih&#39;, 0.38374589423
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f277ff19-ed19-4bdc-91a5-7655049f5916 button.colab-df-convert');
+          document.querySelector('#df-4699db5e-34d9-4409-80c4-30f8ce4d5064 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f277ff19-ed19-4bdc-91a5-7655049f5916');
+          const element = document.querySelector('#df-4699db5e-34d9-4409-80c4-30f8ce4d5064');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -883,10 +944,10 @@ Topic 3:  [(&#39;anis&#39;, 0.5717456369284238), (&#39;pilih&#39;, 0.38374589423
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    561
-3    326
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    558
+3    327
 1    218
-2     60
+2     62
 Name: Topik, dtype: int64
 </pre></div>
 </div>
@@ -953,11 +1014,16 @@ Name: Topik, dtype: int64
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas 9 (LSA Topic Modelling)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#topik-modelling">TOPIK MODELLING</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">Import Library</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">Modelling</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bobot-kata-terhadap-masing-masing-topik">bobot kata terhadap masing masing topik</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bobot-setiap-topik-terhadap-dokumen">bobot setiap topik terhadap dokumen</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>

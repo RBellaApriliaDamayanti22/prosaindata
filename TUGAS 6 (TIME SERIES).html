@@ -63,8 +63,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'TUGAS 6 (TIME SERIES)';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="TUGAS 7" href="TUGAS%207.html" />
-    <link rel="prev" title="TUGAS 5" href="TUGAS%205.html" />
+    <link rel="next" title="TUGAS 7" href="TUGAS%207%20%28CBOW%29.html" />
+    <link rel="prev" title="TUGAS 5" href="TUGAS%205%20%28PCA%29.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -161,11 +161,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%202%20%28Crawling%20data%20Website%29.html">TUGAS 2 (Crawling data Website https://pta.trunojoyo.ac.id/ )</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%203%20%28Crawling%20data%20Website%20Berita%20CNN%29.html">TUGAS 3 (Crawling data Website Berita CNN)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%204%20%28Pipelines%29.html">TUGAS 4 (Pipelines)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TUGAS%205.html">TUGAS 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUGAS%205%20%28PCA%29.html">TUGAS 5</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">TUGAS 6 (TIME SERIES)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TUGAS%207.html">TUGAS 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUGAS%207%20%28CBOW%29.html">TUGAS 7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%208%20%28PAGERANK%29.html">Tugas 8 (PAGERANK)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS%209%20%28Topic%20Modelling%29.html">Tugas 9 (LSA Topic Modelling)</a></li>
+
 </ul>
 
     </div>
@@ -411,7 +412,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0aee74bf-21f9-4b45-b2bd-53fc617a8a10">
+  <div id="df-b4b93c6a-36da-40c6-a98b-1df59767ec68">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -495,7 +496,7 @@ document.write(`
 </table>
 <p>144 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0aee74bf-21f9-4b45-b2bd-53fc617a8a10')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b4b93c6a-36da-40c6-a98b-1df59767ec68')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -546,12 +547,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0aee74bf-21f9-4b45-b2bd-53fc617a8a10 button.colab-df-convert');
+          document.querySelector('#df-b4b93c6a-36da-40c6-a98b-1df59767ec68 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0aee74bf-21f9-4b45-b2bd-53fc617a8a10');
+          const element = document.querySelector('#df-b4b93c6a-36da-40c6-a98b-1df59767ec68');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -675,7 +676,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-efbdd2d8-f64a-4740-a151-0b3698a80edc">
+  <div id="df-36608f82-6cea-4ee9-a3cc-16ee897d9add">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -734,7 +735,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-efbdd2d8-f64a-4740-a151-0b3698a80edc')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-36608f82-6cea-4ee9-a3cc-16ee897d9add')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -785,12 +786,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-efbdd2d8-f64a-4740-a151-0b3698a80edc button.colab-df-convert');
+          document.querySelector('#df-36608f82-6cea-4ee9-a3cc-16ee897d9add button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-efbdd2d8-f64a-4740-a151-0b3698a80edc');
+          const element = document.querySelector('#df-36608f82-6cea-4ee9-a3cc-16ee897d9add');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1266,7 +1267,7 @@ Name: Xt, Length: 141, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f1ac2227-6b84-4f31-888b-6c7773100156">
+  <div id="df-6b7a95ee-c569-4194-80f4-f06377e982b9">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1439,7 +1440,7 @@ Name: Xt, Length: 141, dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f1ac2227-6b84-4f31-888b-6c7773100156')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6b7a95ee-c569-4194-80f4-f06377e982b9')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1490,12 +1491,12 @@ Name: Xt, Length: 141, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f1ac2227-6b84-4f31-888b-6c7773100156 button.colab-df-convert');
+          document.querySelector('#df-6b7a95ee-c569-4194-80f4-f06377e982b9 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f1ac2227-6b84-4f31-888b-6c7773100156');
+          const element = document.querySelector('#df-6b7a95ee-c569-4194-80f4-f06377e982b9');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1555,7 +1556,7 @@ Name: Xt, Length: 141, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-9b41977b-27bd-4c50-bbb1-135e2a7c8ee2">
+  <div id="df-24e793af-6d71-4b9b-88dd-9a20b7609579">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1698,7 +1699,7 @@ Name: Xt, Length: 141, dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-9b41977b-27bd-4c50-bbb1-135e2a7c8ee2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-24e793af-6d71-4b9b-88dd-9a20b7609579')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1749,12 +1750,12 @@ Name: Xt, Length: 141, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-9b41977b-27bd-4c50-bbb1-135e2a7c8ee2 button.colab-df-convert');
+          document.querySelector('#df-24e793af-6d71-4b9b-88dd-9a20b7609579 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-9b41977b-27bd-4c50-bbb1-135e2a7c8ee2');
+          const element = document.querySelector('#df-24e793af-6d71-4b9b-88dd-9a20b7609579');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1809,7 +1810,7 @@ Name: Xt, Length: 141, dtype: int64
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="TUGAS%205.html"
+       href="TUGAS%205%20%28PCA%29.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -1818,7 +1819,7 @@ Name: Xt, Length: 141, dtype: int64
       </div>
     </a>
     <a class="right-next"
-       href="TUGAS%207.html"
+       href="TUGAS%207%20%28CBOW%29.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
