@@ -30,7 +30,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-from google.colab import drive
-drive.mount('/content/drive')
+['# isikan dengan api key Anda', "api_key = 'AIzaSyDGy3ZfZu4UhoOyySakiB2TEu0Y9X4OmLw'", '', '# Enter video id', '# contoh url video = https://www.youtube.com/watch?v=5tucmKjOGi8']
+...
+['', '# Call function', 'comments = video_comments(video_id)', '', 'comments']
 -------------------
 
